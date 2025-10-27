@@ -1,100 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Lohith Lalesh</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root { --accent-color: #4f46e5; }
-        body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; scroll-behavior: smooth; }
-        .text-gradient { background-image: linear-gradient(45deg, var(--accent-color), #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .shadow-fancy {
-            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15); /* Light Indigo Shadow */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Lohith Lalesh</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --accent-color: #4f46e5; }
+body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; scroll-behavior: smooth; }
+.text-gradient { background-image: linear-gradient(45deg, var(--accent-color), #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.shadow-fancy {
+box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15); /* Light Indigo Shadow */
+}
+</style>
 </head>
 <body class="antialiased">
 
-    <!-- Header (Navigation links back to index.html) -->
-    <header class="sticky top-0 z-50 bg-white shadow-lg">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold text-gradient">Lohith Lalesh</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="about.html" class="text-indigo-600 font-bold transition duration-300 font-medium border-b-2 border-indigo-600">About Me</a>
-                <a href="index.html#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Projects</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
-                <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
-                <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
-            </nav>
-            <button class="md:hidden text-gray-700 hover:text-indigo-600" onclick="alert('Navigation: About Me, Projects, Skills, Resume, Contact')">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+<!-- Header (Navigation links back to index.html) -->
+<header class="sticky top-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-extrabold text-gradient">Lohith Lalesh</a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="about.html" class="text-indigo-600 font-bold transition duration-300 font-medium border-b-2 border-indigo-600">About Me</a>
+            <a href="index.html#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Projects</a>
+            <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
+            <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
+            <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
+        </nav>
+        <button class="md:hidden text-gray-700 hover:text-indigo-600" onclick="alert('Navigation: About Me, Projects, Skills, Resume, Contact')">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+
+        <h1 class="text-5xl font-extrabold text-gray-900 mb-10 text-center">About Me</h1>
+
+        <!-- Professional Summary and Photo -->
+        <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border-l-4 border-indigo-600 flex flex-col md:flex-row items-center md:items-start gap-8">
+            
+            <!-- Photo -->
+            <div class="flex-shrink-0">
+                <img src="https://i.ibb.co/9mdSmCSF/Frame-1686575918.png"
+                    onerror="this.onerror=null; this.src='https://placehold.co/200x200/a8a29e/ffffff?text=Headshot'"
+                    alt="Professional Headshot"
+                    class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white shadow-indigo-300/50"
+                    loading="lazy">
+            </div>
+
+            <!-- Summary -->
+            <div>
+                <h2 class="text-3xl font-bold text-indigo-600 mb-4">My Philosophy</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Marketing, to me, is not a pursuit of clicks and impressions, necessarily, but a craft of storytelling that moves people and fuels growth. Over the years, I’ve discovered how to merge insights, creativity, and emotion to craft campaigns that make brands impossible to ignore. One thing that resonates with me is creating digital experiences that can not only bring people to a brand but also inspire them to believe in its storyline.
+                </p>
+            </div>
         </div>
-    </header>
 
-    <main class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <!-- Experience and Education Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
 
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-10 text-center">About Lohith Lalesh</h1>
+            <!-- Column 1: Experience -->
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Experience</h3>
 
-            <!-- Professional Summary and Photo -->
-            <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border-l-4 border-indigo-600 flex flex-col md:flex-row items-center md:items-start gap-8">
-                
-                <!-- Photo -->
-                <div class="flex-shrink-0">
-                    <img src="https://i.ibb.co/9mdSmCSF/Frame-1686575918.png"
-                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/a8a29e/ffffff?text=Headshot'"
-                         alt="Professional Headshot"
-                         class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white shadow-indigo-300/50"
-                         loading="lazy">
-                </div>
+                <div class="space-y-6">
+                    <!-- Job 1 -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-900">Digital Marketing Specialist</h4>
+                        <p class="text-indigo-600 font-medium">Revolute | 2023 - Present</p>
+                        <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Managed high-volume campaigns ($10,000USD/month) across various channels like affiliate groups,Meta, Taboola and Adgebra and reaped up to 3x ROI.</li>
+                            <li>Grew an Instagram account from scratch to 44,000 followers, peaking with 1M+ impressions/month and maintained communities on Telegram and Discord. </li>
+                            <li>Architected and optimised email workflows (Brevo).</li>
+                        </ul>
+                    </div>
 
-                <!-- Summary -->
-                <div>
-                    <h2 class="text-3xl font-bold text-indigo-600 mb-4">My Philosophy</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                      Marketing, to me, is not a pursuit of clicks and impressions, necessarily, but a craft of storytelling that moves people and fuels growth. Over the years, I’ve discovered how to merge insights, creativity, and emotion to craft campaigns that make brands impossible to ignore. One thing that resonates with me is creating digital experiences that can not only bring people to a brand but also inspire them to believe in its storyline.
-                    </p>
+                    <!-- Job 2 -->
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-900">Digital Marketing Associate</h4>
+                        <p class="text-indigo-600 font-medium">FACE Prep | 2022 - 2023</p>
+                        <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Drove 5x organic traffic growth for clients across B2B and e-commerce sectors.</li>
+                            <li>Managed on page SEO audits.</li>
+                            <li>Created and oversaw social media campaigns across key platforms (Instagram, Telegram, WhatsApp, Brevo, Meta Ads)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Experience and Education Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
-
-                <!-- Experience -->
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Experience</h3>
-
-                    <div class="space-y-6">
-                        <!-- Job 1 -->
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <h4 class="text-xl font-semibold text-gray-900">Digital Marketing Specialist</h4>
-                            <p class="text-indigo-600 font-medium">Revolute | 2023 - Present</p>
-                            <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-1">
-                                <li>Managed high-volume campaigns ($10,000USD/month) across various channels like affiliate groups,Meta, Taboola and Adgebra and reaped up to 3x ROI.</li>
-                              <li>Grew an Instagram account from scratch to 44,000 followers, peaking with 1M+ impressions/month and maintained communities on Telegram and Discord. </li>
-                                <li>Architected and optimised email workflows (Brevo).</li>
-                            </ul>
-                        </div>
-
-                        <!-- Job 2 -->
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <h4 class="text-xl font-semibold text-gray-900">Digital Marketing Executive</h4>
-                            <p class="text-indigo-600 font-medium">FACE Prep | 2022 - 2023</p>
-                            <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-1">
-                                <li>Drove 5x organic traffic growth for clients across B2B and e-commerce sectors.</li>
-                                <li>Managed on page SEO audits.</li>
-                              <li>Created and oversaw social media campaigns across key platforms (Instagram, Telegram, WhatsApp, Brevo, Meta Ads)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education -->
+            <!-- Column 2: Education, Certs, and Honors (Balanced) -->
+            <div class="space-y-6">
+                <!-- Education & Certifications -->
                 <div class="bg-white p-8 rounded-xl shadow-lg">
                     <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Education & Certifications</h3>
 
@@ -106,47 +109,68 @@
                             <p class="text-sm text-gray-600 mt-1">Specialization in Finance.</p>
                         </div>
 
-                        <!-- Education 2 (Certifications) -->
+                        <!-- Certifications -->
                         <div class="border-l-4 border-pink-500 pl-4">
                             <h4 class="text-xl font-semibold text-gray-900">Certifications</h4>
                             <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-1">
-                             <a href="https://app-eu1.hubspot.com/academy/achievements/v98t0xhl/en/1/lohith-lalesh/social-media-marketing">   <li>Hubspot Social Media Marketing Certification</li> </a>
-                             <a href="https://www.facebookblueprint.com/student/award/YrUV5FjmMrDFQHb9hH5iHouE"></a>   <li>Meta Ads Manager Certification</li>
+                                <li><a href="https://app-eu1.hubspot.com/academy/achievements/v98t0xhl/en/1/lohith-lalesh/social-media-marketing" class="text-blue-600 hover:text-blue-800 transition duration-300" target="_blank">Hubspot Social Media Marketing Certification</a></li>
+                                <li><a href="https://www.facebookblueprint.com/student/award/YrUV5FjmMrDFQHb9hH5iHouE" class="text-blue-600 hover:text-blue-800 transition duration-300" target="_blank">Meta Ads Manager Certification</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                <!-- Honors & Recognition -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-500">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Honors & Recognition</h3>
+                    <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-2">
+                        <li>Top Contributor in Q3 2024 for driving **3x ROI on Trafficstars Campaign**.</li>
+                        <li>Recognized for achieving **1 million average views** with moment marketing on client socials for 6 months in a row.</li>
+                        <li>Placeholder: Add any other awards or internal recognition here.</li>
+                    </ul>
+                </div>
 
-            <!-- Tools Used Section (Kept the same for simplicity) -->
-            <div class="bg-white p-8 rounded-xl shadow-lg mb-12">
-                <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-2">My Toolkit</h3>
-                <div class="flex flex-wrap justify-center gap-6">
-                    <!-- Tool Categories -->
-                    <span class="bg-indigo-50 text-indigo-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-indigo-200 hover:scale-105 transition duration-300">Analytics: GA4, Looker Studio, GTM</span>
-                    <span class="bg-blue-50 text-blue-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-blue-200 hover:scale-105 transition duration-300">PPC: Google Ads, Meta Ads Manager</span>
-                    <span class="bg-purple-50 text-purple-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-purple-200 hover:scale-105 transition duration-300">SEO: Ahrefs, SEMrush, Screaming Frog</span>
-                    <span class="bg-pink-50 text-pink-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-pink-200 hover:scale-105 transition duration-300">CRM/Email: HubSpot, Mailchimp, Marketo</span>
-                    <span class="bg-red-50 text-red-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-red-200 hover:scale-105 transition duration-300">CRO: Hotjar, Google Optimize (Legacy)</span>
+                <!-- Additional Courses & Bootcamps -->
+                 <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-yellow-500">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Additional Courses & Bootcamps</h3>
+                    <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-2">
+                        <li>Placeholder: Advanced Google Analytics 4 Course</li>
+                        <li>Placeholder: Copywriting for Conversions Bootcamp</li>
+                        <li>Placeholder: Specialized E-commerce Marketing Training</li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <!-- Back to Home CTA -->
-            <div class="text-center">
-                <a href="index.html" class="inline-block px-8 py-3 bg-gray-300 text-gray-800 text-lg font-semibold rounded-full hover:bg-gray-400 transition duration-300">
-                    &larr; Back to Portfolio
-                </a>
+        <!-- Tools Used Section (Updated) -->
+        <div class="bg-white p-8 rounded-xl shadow-lg mb-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-2">My Toolkit</h3>
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Tool Categories -->
+                <span class="bg-indigo-50 text-indigo-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-indigo-200 hover:scale-105 transition duration-300">Analytics: GA4, SEMrush</span>
+                <span class="bg-blue-50 text-blue-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-blue-200 hover:scale-105 transition duration-300">PPC/Ads: Meta Ads Manager, Telegram Ads, Taboola, Trafficstars, Evadav</span>
+                <span class="bg-purple-50 text-purple-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-purple-200 hover:scale-105 transition duration-300">CRM/Email: Brevo, Mailchimp</span>
+                <span class="bg-pink-50 text-pink-700 text-lg font-semibold px-5 py-2 rounded-full shadow-sm border border-pink-200 hover:scale-105 transition duration-300">Design/Editing: Figma, Premiere Pro, CapCut</span>
             </div>
-
         </div>
-    </main>
 
-    <!-- 7. Footer -->
-    <footer class="bg-gray-800 text-white py-8 border-t border-gray-700">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-sm text-gray-400">&copy; 2025 Lohith Lalesh. All rights reserved.</p>
+        <!-- Back to Home CTA -->
+        <div class="text-center">
+            <a href="index.html" class="inline-block px-8 py-3 bg-gray-300 text-gray-800 text-lg font-semibold rounded-full hover:bg-gray-400 transition duration-300">
+                &larr; Back to Portfolio
+            </a>
         </div>
-    </footer>
+
+    </div>
+</main>
+
+<!-- 7. Footer -->
+<footer class="bg-gray-800 text-white py-8 border-t border-gray-700">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2025 Lohith Lalesh. All rights reserved.</p>
+    </div>
+</footer>
+
 
 </body>
 </html>
