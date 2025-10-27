@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Lohith Lalesh</title>
+<meta name="google-site-verification" content="klvEp3YYrRQIl3L191NcoZWFQX3fS3akvFWGwFjvKFE" />
+     <link rel="icon" type="image/x-icon" href="lohicon.ico">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -38,21 +40,37 @@ box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15); /* Light Indigo Shadow */
 </header>
 
 <main class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-extrabold text-gradient">Lohith Lalesh</a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-8">
+        <a href="about.html" class="text-indigo-600 font-bold transition duration-300 font-medium border-b-2 border-indigo-600">About Me</a>
+        <a href="index.html#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Projects</a>
+        <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
+        <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
+        <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
+    </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button id="menu-button" class="md:hidden text-gray-700 hover:text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+</div>
 
-        <h1 class="text-5xl font-extrabold text-gray-900 mb-10 text-center">About Me</h1>
-
-        <!-- Professional Summary and Photo -->
-        <div class="bg-white p-8 rounded-xl shadow-lg mb-12 border-l-4 border-indigo-600 flex flex-col md:flex-row items-center md:items-start gap-8">
-            
-            <!-- Photo -->
-            <div class="flex-shrink-0">
-                <img src="https://i.ibb.co/9mdSmCSF/Frame-1686575918.png"
-                    onerror="this.onerror=null; this.src='https://placehold.co/200x200/a8a29e/ffffff?text=Headshot'"
-                    alt="Professional Headshot"
-                    class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white shadow-indigo-300/50"
-                    loading="lazy">
-            </div>
+<!-- Mobile Menu (Hidden by default) -->
+<div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-2 border-t border-gray-100">
+    <nav class="flex flex-col space-y-2 p-4">
+        <a href="about.html" class="text-indigo-600 font-bold transition duration-300 font-medium px-2 py-1 rounded">About Me</a>
+        <a href="index.html#projects" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Projects</a>
+        <a href="index.html#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Skills</a>
+        <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Resume &rarr;</a>
+        <a href="index.html#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Contact</a>
+    </nav>
+</div>
 
             <!-- Summary -->
             <div>
@@ -124,8 +142,8 @@ box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15); /* Light Indigo Shadow */
                 <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-500">
                     <h3 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Honors & Recognition</h3>
                     <ul class="list-disc ml-5 text-gray-600 text-sm mt-2 space-y-2">
-                        <li>Top Contributor in Q3 2024 for driving **3x ROI on Trafficstars Campaign**.</li>
-                        <li>Recognized for achieving **1 million average views** with moment marketing on client socials for 6 months in a row.</li>
+                        <li>Top Contributor in Q3 2024 for driving 3x ROI on Programmatic Ad Campaign.</li>
+                        <li> Recognised for achieving 1 million average views with moment marketing on client socials for 6 months in a row.</li>
                         <li>Placeholder: Add any other awards or internal recognition here.</li>
                     </ul>
                 </div>
@@ -159,7 +177,26 @@ box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15); /* Light Indigo Shadow */
         <p class="text-sm text-gray-400">&copy; 2025 Lohith Lalesh. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        menuButton.addEventListener('click', () => {
+            // Toggle the 'hidden' class to show/hide the menu
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Optional: Hide menu after clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Wait briefly for the scroll to start before hiding
+                setTimeout(() => mobileMenu.classList.add('hidden'), 50); 
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
