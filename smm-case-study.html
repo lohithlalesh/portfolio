@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/lohicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study: Data-led Social Media Growth Plan</title>
@@ -16,56 +18,103 @@
 <body class="antialiased">
 
     <!-- Header (Navigation links back to index.html) -->
-    <header class="sticky top-0 z-50 bg-white shadow-lg">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-extrabold text-gradient">Lohith Lalesh</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="about.html" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">About Me</a>
-                <a href="index.html#projects" class="text-indigo-600 font-bold transition duration-300 font-medium">Projects</a>
-                <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
-                <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
-                <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
-            </nav>
-            <button class="md:hidden text-gray-700 hover:text-indigo-600" onclick="alert('Navigation: About Me, Projects, Skills, Resume, Contact')">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-    </header>
+<header class="sticky top-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-extrabold text-gradient">Lohith Lalesh</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="about.html" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">About Me</a>
+            <a href="index.html#projects" class="text-indigo-600 font-bold transition duration-300 font-medium">Projects</a>
+            <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
+            <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
+            <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-button" class="md:hidden text-gray-700 hover:text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-2 border-t border-gray-100">
+        <nav class="flex flex-col space-y-2 p-4">
+            <a href="about.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">About Me</a>
+            <a href="index.html#projects" class="text-indigo-600 font-bold transition duration-300 font-medium px-2 py-1 rounded">Projects</a>
+            <a href="index.html#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Skills</a>
+            <a href="YOUR_GOOGLE_DOC_PDF_LINK_HERE" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Resume &rarr;</a>
+            <a href="index.html#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300 font-medium px-2 py-1 rounded">Contact</a>
+        </nav>
+    </div>
+</header>
 
     <main class="py-12 md:py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
 
             <!-- Title & Summary -->
-            <div class="mb-12 border-b pb-6">
-                <p class="text-indigo-600 text-sm font-semibold uppercase tracking-wider mb-2">Case Study</p>
-                <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Data-led Social Media Growth Plan</h1>
-                <p class="text-xl text-gray-600">
-                    An exploration of how data-driven insights, timely engagement, and trend-based content fueled rapid social media growth.
-                </p>
-            </div>
+           <main class="py-12 md:py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
 
-            <!-- The Challenge & Solution -->
-            <div class="grid md:grid-cols-2 gap-10 mb-12 bg-white p-8 rounded-xl shadow-lg">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 text-indigo-600">The Challenge</h2>
-                    <ul class="list-disc list-inside space-y-3 text-gray-700">
-                        <li>Heavy reliance on paid ads for bottom-of-funnel conversions with minimal organic reach.</li>
-                        <li>Niche products relied on generic static posts, lacking engagement or differentiation.</li>
-                        <li>Low conversion rates from link clicks.</li>
-                    </ul>
+        <!-- Title & Summary -->
+        <div class="mb-12 border-b pb-6">
+            <p class="text-indigo-600 text-sm font-semibold uppercase tracking-wider mb-2">Case Study</p>
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-4">Data-led Social Media Growth Plan</h1>
+            <p class="text-xl text-gray-600">
+                An exploration of how data-driven insights, timely engagement, and trend-based content fueled rapid social media growth.
+            </p>
+        </div>
+
+        <!-- The Challenge & Solution (FIXED: New Dynamic Layout) -->
+        <section class="mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- The Challenge Card -->
+                <div class="bg-red-50 p-8 rounded-xl shadow-lg border-t-4 border-red-500 hover:shadow-xl transition duration-300">
+                    <h2 class="text-3xl font-extrabold text-red-700 mb-4 flex items-center">
+                        <i class="fas fa-bomb mr-3 text-red-500"></i> The Challenge
+                    </h2>
+                    <div class="space-y-4">
+                        <!-- Challenge Point 1 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-red-200">
+                            <p class="font-semibold text-gray-800">Heavy reliance on paid ads for bottom-of-funnel conversions with minimal organic reach.</p>
+                        </div>
+                        <!-- Challenge Point 2 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-red-200">
+                            <p class="font-semibold text-gray-800">Niche products relied on generic static posts, lacking engagement or differentiation.</p>
+                        </div>
+                        <!-- Challenge Point 3 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-red-200">
+                            <p class="font-semibold text-gray-800">Low conversion rates from link clicks.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2 text-indigo-600">My Solution</h2>
-                    <ol class="list-decimal list-inside space-y-3 text-gray-700">
-                        <li> <b>Content Strategy Revamp:</b> Shifted to an 80/20 model — 80% audience-interest content, 20% brand promotions — to boost engagement and trust.</li>
-                        <li> <b>Community Integration:</b> Identified and engaged with niche online communities, using social listening and trend hijacking to drive organic traffic.</li>
-                        <li> <b>Creative Optimisation:</b> Redesigned video production workflows and trained the team to create high-quality short-form videos faster, improving consistency and performance.</li>
-                    </ol>
+
+                <!-- The Solution Card -->
+                <div class="bg-green-50 p-8 rounded-xl shadow-lg border-t-4 border-green-500 hover:shadow-xl transition duration-300">
+                    <h2 class="text-3xl font-extrabold text-green-700 mb-4 flex items-center">
+                        <i class="fas fa-lightbulb mr-3 text-green-500"></i> My Solution
+                    </h2>
+                    <div class="space-y-4">
+                        <!-- Solution Point 1 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                            <p class="font-semibold text-gray-800">1. Content Strategy Revamp: Shifted to an 80/20 model — 80% audience-interest content, 20% brand promotions — to boost engagement and trust.</p>
+                        </div>
+                        <!-- Solution Point 2 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                            <p class="font-semibold text-gray-800">2. Community Integration: Identified and engaged with niche online communities, using social listening and trend hijacking to drive organic traffic.</p>
+                        </div>
+                        <!-- Solution Point 3 -->
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                            <p class="font-semibold text-gray-800">3. Creative Optimisation: Redesigned video production workflows and trained the team to create high-quality short-form videos faster, improving consistency and performance.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+        </section>
             <!-- Results Metrics -->
             <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Quantifiable Results</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -110,6 +159,23 @@
             <p class="text-sm text-gray-400">&copy; 2025 Lohith Lalesh. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(() => mobileMenu.classList.add('hidden'), 50); 
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
