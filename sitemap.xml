@@ -4,7 +4,7 @@
     <!-- Home Page -->
     <url>
         <loc>https://lohithlalesh.github.io/portfolio/</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -12,9 +12,33 @@
     <!-- About Me Page -->
     <url>
         <loc>https://lohithlalesh.github.io/portfolio/about.html</loc>
-        <lastmod>2025-10-27</lastmod>
+        <lastmod>2025-11-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- Case Study: PPC -->
+    <url>
+        <loc>https://lohithlalesh.github.io/portfolio/ppc-case-study.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Case Study: SMM/SEO -->
+    <url>
+        <loc>https://lohithlalesh.github.io/portfolio/smm-case-study.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Case Study: Email Marketing -->
+    <url>
+        <loc>https://lohithlalesh.github.io/portfolio/email-case-study.html</loc>
+        <lastmod>2025-11-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
