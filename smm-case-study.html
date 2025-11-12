@@ -15,10 +15,10 @@
         body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; scroll-behavior: smooth; }
         .text-gradient { background-image: linear-gradient(45deg, var(--accent-color), #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .stat-card { border-left: 4px solid; }
-        /* Style for the responsive iframe wrapper */
+        /* FIX: New, WIDER aspect ratio (approx 16:9) */
         .responsive-iframe-container {
             position: relative;
-            padding-bottom: 75%; /* 4:3 aspect ratio (404/316=1.27, using 75% for height) */
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -43,7 +43,7 @@
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8">
             <a href="about.html" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">About Me</a>
-            <a href="index.html#projects" class="text-indigo-600 font-bold transition duration-300 font-medium">Case Studies</a>
+            <a href="index.html#projects" class="text-indigo-600 font-bold transition duration-300 font-medium">Case Study</a>
             <a href="index.html#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Skills</a>
             <a href="https://drive.google.com/file/d/1LFZg7aah93mNoC-BftRJgfNezntbkTUa/view" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Resume &rarr;</a>
             <a href="index.html#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-medium">Contact</a>
@@ -142,14 +142,14 @@
             </div>
         </div>
 
-        <!-- Behance Project Preview (FIXED: Responsive Embed) -->
+        <!-- Behance Project Preview (FIXED: New, Wider Aspect Ratio) -->
         <div class="mb-12 text-center bg-white p-8 rounded-xl shadow-lg">
             <h3 class="text-2xl font-semibold mb-4 text-gray-800">Full Design Project Preview (Behance)</h3>
             <div class="responsive-iframe-container rounded-xl shadow-2xl mx-auto w-full max-w-xl">
-                <iframe src="https://www.behance.net/embed/project/238412133?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+                <iframe src="https://www.behance.net/embed/project/238412133?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" title="Behance Project Embed"></iframe>
             </div>
             <p class="text-sm text-gray-500 mt-2">The project is embedded below. Click the link above to view it on the Behance website.</p>
-            <a href="https://www.behance.net/gallery/238354915/Fullstack-Digital-Marketing-Portfolio" target="_blank" class="mt-4 inline-block text-indigo-600 font-semibold hover:text-indigo-800">View on Behance Website &rarr;</a>
+            <a href="https://www.behance.net/gallery/238412133/Fullstack-Digital-Marketing-Portfolio" target="_blank" class="mt-4 inline-block text-indigo-600 font-semibold hover:text-indigo-800">View on Behance Website &rarr;</a>
         </div>
 
         <!-- Conclusion CTA -->
