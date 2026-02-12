@@ -323,9 +323,56 @@
 
           <div class="skills-wrapper">
 
-            <div>
-              <script src="https://widgets.embeddable.co/sdk/latest/embeddable.js" defer></script>
-<div class="embeddable-ga6NY3Vzvk"></div>
+           <div class="slider-container">
+  <div id="slide">
+    
+    <div class="item" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop');">
+      <div class="content">
+        <div class="name">Fashion Model</div>
+        <div class="des">Bold styles for the modern era.</div>
+        <button>See More</button>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url('https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=1000&auto=format&fit=crop');">
+      <div class="content">
+        <div class="name">Modern Art</div>
+        <div class="des">Abstract concepts in 3D space.</div>
+        <button>See More</button>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop');">
+      <div class="content">
+        <div class="name">Portrait</div>
+        <div class="des">Capturing the essence of emotion.</div>
+        <button>See More</button>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1000&auto=format&fit=crop');">
+      <div class="content">
+        <div class="name">Nature</div>
+        <div class="des">The beauty of the natural world.</div>
+        <button>See More</button>
+      </div>
+    </div>
+
+    <div class="item" style="background-image: url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop');">
+      <div class="content">
+        <div class="name">Travel</div>
+        <div class="des">Explore new horizons.</div>
+        <button>See More</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="buttons">
+    <button id="prev"><ion-icon name="arrow-back-outline"></ion-icon></button>
+    <button id="next"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+  </div>
+</div>
 
               <a href="mailto:lohithlalesh@gmail.com" class="btn has-before">Contact Me</a>
             </div>
@@ -630,7 +677,31 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  // Select Elements
+  const nextBtn = document.getElementById('next');
+  const prevBtn = document.getElementById('prev');
+  const slide = document.getElementById('slide');
 
+  // Next Button Function
+  nextBtn.onclick = function () {
+    let lists = document.querySelectorAll('.item');
+    // Moves the first item to the END of the list
+    slide.appendChild(lists[0]);
+  }
+
+  // Prev Button Function
+  prevBtn.onclick = function () {
+    let lists = document.querySelectorAll('.item');
+    // Moves the last item to the START of the list
+    slide.prepend(lists[lists.length - 1]);
+  }
+  
+  // Optional: Auto-play every 5 seconds
+  setInterval(() => {
+    nextBtn.click();
+  }, 5000);
+</script>
 </body>
 
 </html>
