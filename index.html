@@ -312,7 +312,7 @@
         </div>
       </section>
 
-    <section class="section skills" aria-label="our skills">
+<section class="section skills" aria-label="our skills">
         <div class="container">
 
           <p class="section-subtitle">My Marketing Toolkit</p>
@@ -321,34 +321,36 @@
 
           <div style="
               width: 100%;
-              height: 600px; /* Forces the box to stay open */
-              margin-top: 40px;
+              height: 600px; 
+              margin-top: 40px; 
               margin-bottom: 40px;
+              background: transparent; /* No background color here */
               border-radius: 20px;
               overflow: hidden;
-              box-shadow: 0 20px 40px rgba(0,0,0,0.5);
               position: relative;
-        /* Dark background to match your site */
           ">
             <iframe 
-              src="https://cherished-version-457316.framer.app" 
+              src="https://cherished-version-457316.framer.app/" 
               style="
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
                 height: 100%;
                 border: none;
-                display: block;"
+                background: transparent;" 
               title="Interactive Content"
-              loading="lazy"
-              scrolling="no">
+              allowtransparency="true"
+              loading="lazy">
             </iframe>
           </div>
+
           <div style="text-align: center;">
-            <a href="mailto:lohith.lalesh@example.com" class="btn has-before">Contact Me</a>
+             <a href="mailto:lohith.lalesh@example.com" class="btn has-before">Contact Me</a>
           </div>
 
         </div>
       </section>
-
 
       <section class="portfolio" aria-labelledby="portfolio-label">
 
