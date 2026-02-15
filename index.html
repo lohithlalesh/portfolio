@@ -324,9 +324,9 @@
               height: 600px; 
               margin-top: 40px; 
               margin-bottom: 40px;
-              background: transparent; /* No background color here */
+              background: transparent;
               border-radius: 20px;
-              overflow: hidden;
+              overflow: hidden; /* Key to hiding scrollbars */
               position: relative;
           ">
             <iframe 
@@ -338,9 +338,11 @@
                 width: 100%;
                 height: 100%;
                 border: none;
-                background: transparent;" 
+                background: transparent;
+                overflow: hidden;" /* Extra safety */
               title="Interactive Content"
               allowtransparency="true"
+              scrolling="no" /* <--- THIS KILLS THE SCROLLBAR */
               loading="lazy">
             </iframe>
           </div>
@@ -351,7 +353,6 @@
 
         </div>
       </section>
-
       <section class="portfolio" aria-labelledby="portfolio-label">
 
         <div class="title-wrapper container">
