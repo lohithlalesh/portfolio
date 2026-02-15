@@ -323,45 +323,46 @@
 
           <h2 class="h2 section-title">I Create High-ROAS Digital Campaigns.</h2>
 
- <section class="framer-section">
+<section style="width: 100%; padding: 40px 0; display: flex; justify-content: center; background: transparent;">
+
     <style>
-        /* 1. Default Styles (Mobile First) */
-        .framer-container {
+        .framer-wrapper {
             width: 100%;
-            /* CHANGE THIS TO YOUR MOBILE FRAMER HEIGHT */
-            height: 800px; 
-            overflow: hidden;
+            max-width: 1200px;
+            position: relative; 
             border-radius: 20px;
-            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            
+            /* MOBILE HEIGHT (Default) */
+            height: 800px; 
         }
 
-        /* 2. Desktop Styles (When screen is bigger than 768px) */
+        /* DESKTOP HEIGHT (Screens wider than 768px) */
         @media (min-width: 768px) {
-            .framer-container {
-                /* CHANGE THIS TO YOUR DESKTOP FRAMER HEIGHT */
-                height: 600px; 
-                /* Optional: Limit width on big screens */
-                max-width: 1200px; 
-                margin: 0 auto;
+            .framer-wrapper {
+                height: 650px; /* Adjust this number if you need it taller/shorter on desktop */
             }
-        }
-        
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
         }
     </style>
 
-    <div class="framer-container">
+    <div class="framer-wrapper">
         <iframe 
             src="https://cherished-version-457316.framer.app" 
+            style="
+                position: absolute; 
+                top: 0; 
+                left: 0; 
+                width: 100%; 
+                height: 100%; 
+                border: none; 
+                background: transparent;"
             title="Interactive Content"
             scrolling="no">
         </iframe>
     </div>
+
 </section>
-            <div>
 
               <a href="mailto:lohith.lalesh@example.com" class="btn has-before">Contact Me</a>
             </div>
