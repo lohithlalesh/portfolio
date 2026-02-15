@@ -321,13 +321,14 @@
 
           <div style="
               width: 100%;
-              height: 600px; 
+              height: 700px; 
               margin-top: 40px; 
               margin-bottom: 40px;
-              background: transparent;
+              background: #111111; /* Matching background manually */
               border-radius: 20px;
-              overflow: hidden; /* Key to hiding scrollbars */
+              overflow: hidden; 
               position: relative;
+              border: 2px solid red; /* TEMPORARY: REMOVE THIS AFTER IT WORKS */
           ">
             <iframe 
               src="https://cherished-version-457316.framer.app/" 
@@ -337,12 +338,8 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border: none;
-                background: transparent;
-                overflow: hidden;" /* Extra safety */
+                border: none;"
               title="Interactive Content"
-              allowtransparency="true"
-              scrolling="no" /* <--- THIS KILLS THE SCROLLBAR */
               loading="lazy">
             </iframe>
           </div>
