@@ -323,36 +323,42 @@
 
           <h2 class="h2 section-title">I Create High-ROAS Digital Campaigns.</h2>
 
-   <section style="
-    width: 100%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 50px 0; 
-    background-color: transparent;">
+ <section class="framer-section">
+    <style>
+        /* 1. Default Styles (Mobile First) */
+        .framer-container {
+            width: 100%;
+            /* CHANGE THIS TO YOUR MOBILE FRAMER HEIGHT */
+            height: 800px; 
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+        }
 
-    <div style="
-        position: relative; 
-        width: 100%; 
-        max-width: 1200px; /* MATCH FRAMER WIDTH HERE */
-        aspect-ratio: 1200 / 600; /* MATCH FRAMER WIDTH / HEIGHT HERE */
-        overflow: hidden;
-        border-radius: 20px;
-    ">
+        /* 2. Desktop Styles (When screen is bigger than 768px) */
+        @media (min-width: 768px) {
+            .framer-container {
+                /* CHANGE THIS TO YOUR DESKTOP FRAMER HEIGHT */
+                height: 600px; 
+                /* Optional: Limit width on big screens */
+                max-width: 1200px; 
+                margin: 0 auto;
+            }
+        }
         
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+    <div class="framer-container">
         <iframe 
             src="https://cherished-version-457316.framer.app" 
-            style="
-                position: absolute; 
-                top: 0; 
-                left: 0; 
-                width: 100%; 
-                height: 100%; 
-                border: none; 
-                background: transparent;"
             title="Interactive Content"
-            scrolling="no"> </iframe>
-        
+            scrolling="no">
+        </iframe>
     </div>
 </section>
             <div>
