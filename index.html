@@ -319,38 +319,53 @@
 
           <h2 class="h2 section-title">I Create High-ROAS Digital Campaigns.</h2>
 
-         <section style="
-    width: 100%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 0; 
+       <section style="
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     background-color: transparent;">
 
-    <div style="
-        position: relative; 
-        width: 100%; 
-        max-width: 1000px; /* MATCH FRAMER WIDTH HERE */
-        aspect-ratio: 1000 / 322; /* MATCH FRAMER WIDTH / HEIGHT HERE */
+    <div id="framer-wrapper" style="
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
         overflow: hidden;
         border-radius: 0;
     ">
-        
-        <iframe 
-            src="https://cherished-version-457316.framer.app/" 
+        <iframe
+            id="framer-iframe"
+            src="https://cherished-version-457316.framer.app/"
             style="
-                position: absolute; 
-                top: 0; 
-                left: 0; 
-                width: 100%; 
-                height: 100%; 
-                border: none; 
+                display: block;
+                width: 1000px;
+                height: 322px;
+                border: none;
+                transform-origin: top left;
                 background: transparent;"
             title="Interactive Content"
-            scrolling="no"> </iframe>
-        
+            scrolling="no">
+        </iframe>
     </div>
 </section>
+
+<script>
+    function scaleFramer() {
+        const wrapper = document.getElementById('framer-wrapper');
+        const iframe = document.getElementById('framer-iframe');
+        const designWidth = 1000;
+        const designHeight = 322;
+        const availableWidth = wrapper.offsetWidth;
+        const scale = availableWidth / designWidth;
+
+        iframe.style.transform = `scale(${scale})`;
+        wrapper.style.height = (designHeight * scale) + 'px';
+    }
+
+    scaleFramer();
+    window.addEventListener('resize', scaleFramer);
+</script>
 </section>
  <div class="title-wrapper container">
           <div>
