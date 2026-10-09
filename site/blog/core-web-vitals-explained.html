@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-AE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Core Web Vitals Explained for Business Owners</title>
+  <meta name="description" content="What LCP, INP and CLS mean in plain language, Google&#x27;s &#x27;good&#x27; thresholds, how to check your site, and the fixes that usually help most.">
+  <meta name="keywords" content="Core Web Vitals, LCP INP CLS, website speed SEO, page speed Dubai website">
+  <meta name="author" content="Lohith Lalesh">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#0247cf">
+  <meta name="geo.region" content="AE-DU">
+  <meta name="geo.placename" content="Dubai">
+  <link rel="canonical" href="https://lohithlalesh.com/blog/core-web-vitals-explained.html">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_AE">
+  <meta property="og:site_name" content="Lohith Lalesh">
+  <meta property="og:url" content="https://lohithlalesh.com/blog/core-web-vitals-explained.html">
+  <meta property="og:title" content="Core Web Vitals explained for business owners">
+  <meta property="og:description" content="What LCP, INP and CLS mean in plain language, Google&#x27;s &#x27;good&#x27; thresholds, how to check your site, and the fixes that usually help most.">
+  <meta property="og:image" content="https://lohithlalesh.com/og-image.jpg">
+  <meta property="article:published_time" content="2026-10-09">
+  <meta property="article:modified_time" content="2026-10-09">
+  <meta property="article:author" content="https://lohithlalesh.com/about.html">
+  <meta property="article:section" content="SEO and AI search">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@LOHITHLALESH">
+  <meta name="twitter:title" content="Core Web Vitals explained for business owners">
+  <meta name="twitter:description" content="What LCP, INP and CLS mean in plain language, Google&#x27;s &#x27;good&#x27; thresholds, how to check your site, and the fixes that usually help most.">
+  <meta name="twitter:image" content="https://lohithlalesh.com/og-image.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="48x48">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/schibsted-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./blog.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://lohithlalesh.com/blog/core-web-vitals-explained.html#article", "headline": "Core Web Vitals explained for business owners", "description": "What LCP, INP and CLS mean in plain language, Google's 'good' thresholds, how to check your site, and the fixes that usually help most.", "url": "https://lohithlalesh.com/blog/core-web-vitals-explained.html", "mainEntityOfPage": "https://lohithlalesh.com/blog/core-web-vitals-explained.html", "datePublished": "2026-10-09", "dateModified": "2026-10-09", "inLanguage": "en-AE", "image": "https://lohithlalesh.com/og-image.jpg", "wordCount": 938, "articleSection": "SEO and AI search", "keywords": "Core Web Vitals, LCP INP CLS, website speed SEO, page speed Dubai website", "author": {"@type": "Person", "@id": "https://lohithlalesh.com/#person", "name": "Lohith Lalesh", "url": "https://lohithlalesh.com/about.html", "jobTitle": "Marketing Specialist", "image": "https://lohithlalesh.com/assets/images/lohith-avatar.webp", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "sameAs": ["https://www.linkedin.com/in/lohith-lalesh/", "https://x.com/LOHITHLALESH", "https://www.behance.net/gallery/241374557/Full-Digital-Marketing-Portfolio"]}, "publisher": {"@id": "https://lohithlalesh.com/#person"}, "about": [{"@type": "Thing", "name": "Core Web Vitals"}, {"@type": "Thing", "name": "Page speed"}], "spatialCoverage": {"@type": "Place", "name": "Dubai, United Arab Emirates"}, "citation": [{"@type": "CreativeWork", "name": "web.dev: Web Vitals", "url": "https://web.dev/articles/vitals"}, {"@type": "CreativeWork", "name": "Google Search Central: Understanding page experience", "url": "https://developers.google.com/search/docs/appearance/page-experience"}, {"@type": "CreativeWork", "name": "web.dev: Defining the Core Web Vitals metrics thresholds", "url": "https://web.dev/articles/defining-core-web-vitals-thresholds"}, {"@type": "CreativeWork", "name": "web.dev: Interaction to Next Paint becomes a Core Web Vital on March 12", "url": "https://web.dev/blog/inp-cwv-march-12"}, {"@type": "CreativeWork", "name": "Chrome for Developers: CrUX methodology", "url": "https://developer.chrome.com/docs/crux/methodology"}]}, {"@type": "FAQPage", "@id": "https://lohithlalesh.com/blog/core-web-vitals-explained.html#faq", "mainEntity": [{"@type": "Question", "name": "What is a good Core Web Vitals score?", "acceptedAnswer": {"@type": "Answer", "text": "LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less, at the 75th percentile of page loads."}}, {"@type": "Question", "name": "Do Core Web Vitals affect SEO?", "acceptedAnswer": {"@type": "Answer", "text": "They're part of page experience, which is one of many ranking signals. Content relevance matters more, but speed affects visitors directly."}}, {"@type": "Question", "name": "Why is my site fast on Wi-Fi but slow in PageSpeed Insights?", "acceptedAnswer": {"@type": "Answer", "text": "Tests simulate slower devices and connections. Real-user data shows what your visitors actually experience."}}, {"@type": "Question", "name": "What replaced First Input Delay?", "acceptedAnswer": {"@type": "Answer", "text": "Interaction to Next Paint (INP) replaced FID as a Core Web Vital on 12 March 2024."}}, {"@type": "Question", "name": "Why does PageSpeed Insights say there is no real-user data for my site?", "acceptedAnswer": {"@type": "Answer", "text": "Field data only appears when a page or site has enough Chrome visitors to be included in the Chrome UX Report. Use the lab results until then."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://lohithlalesh.com/"}, {"@type": "ListItem", "position": 2, "name": "Notes", "item": "https://lohithlalesh.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Core Web Vitals", "item": "https://lohithlalesh.com/blog/core-web-vitals-explained.html"}]}]}</script>
+</head>
+<body class="blog-article">
+<div class="read-progress" data-read-progress aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="../index.html" aria-label="Lohith Lalesh home"><img src="../favicon.svg" alt="" width="28" height="28"><span>Lohith Lalesh</span></a>
+  <nav aria-label="Primary"><ul>
+    <li><a href="../index.html#services">Services</a></li>
+    <li><a href="../dubai/index.html">Dubai</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="./index.html" aria-current="page">Notes</a></li>
+    <li><a href="../about.html">About</a></li>
+  </ul></nav>
+  <a class="talk" href="#contact">Get a quote</a>
+</header>
+<main id="main">
+<article class="article-wrap">
+  <div class="article-head">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span class="sep">/</span><a href="./index.html">Notes</a><span class="sep">/</span><span aria-current="page">Core Web Vitals</span></nav>
+    <span class="pill">SEO and AI search</span>
+    <h1 class="article-title">Core Web Vitals explained for business owners</h1>
+    <p class="article-dek">Core Web Vitals are Google's measures of how fast, responsive and stable a page feels to real visitors. You don't need to understand the code to understand the scores. Here's what each one means and what usually fixes it.</p>
+    <div class="article-byline">
+      <img src="../assets/images/lohith-avatar.webp" alt="Lohith Lalesh" class="byline-avatar" width="52" height="52">
+      <div class="byline-meta"><strong><a href="../about.html" rel="author">Lohith Lalesh</a></strong><span>Marketing specialist, Dubai · <time datetime="2026-10-09">9 Oct 2026</time> · 4 min read</span></div>
+    </div>
+  </div>
+  <nav class="toc" aria-label="On this page"><p class="mono">On this page</p><ol><li><a href="#the-three-metrics">The three metrics</a></li><li><a href="#how-to-check-your-site">How to check your site</a></li><li><a href="#common-fixes">Common fixes</a></li><li><a href="#does-it-affect-rankings">Does it affect rankings?</a></li><li><a href="#faq">Questions</a></li></ol></nav>
+  <div class="article-body">
+<h2 id="the-three-metrics">The three metrics</h2>
+<p>Each metric describes one thing a visitor feels. Loading: does the main content appear quickly? Responsiveness: when I tap something, does the page react straight away? Stability: does the layout stay still, or does the button jump just as I try to press it?</p>
+<div class="infographic reveal"><p class="ig-kicker">SEO and AI search · Dubai</p><h3 class="ig-title">Google's thresholds</h3><div class="table-wrap"><table><thead><tr><th scope="col">Metric</th><th scope="col">What it measures</th><th scope="col">Good</th><th scope="col">Poor</th></tr></thead><tbody><tr><td>Largest Contentful Paint (LCP)</td><td>How fast the main content appears</td><td>2.5 seconds or less</td><td>More than 4 seconds</td></tr><tr><td>Interaction to Next Paint (INP)</td><td>How fast the page responds when tapped or clicked</td><td>200 milliseconds or less</td><td>More than 500 milliseconds</td></tr><tr><td>Cumulative Layout Shift (CLS)</td><td>How much things jump around while loading</td><td>0.1 or less</td><td>More than 0.25</td></tr></tbody></table></div></div>
+<p>Anything between good and poor is labelled "needs improvement". Google recommends measuring at the 75th percentile of page loads, split by mobile and desktop. In other words, most of your real visitors should get a good experience, not just the ones on fast connections.</p>
+<p>If you read older articles, you may see First Input Delay (FID) mentioned. INP replaced FID as the responsiveness metric on 12 March 2024. INP is stricter because it looks at interactions throughout the visit, not just the first one.</p>
+<h2 id="how-to-check-your-site">How to check your site</h2>
+<ul class="keylist"><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span><strong>PageSpeed Insights:</strong> enter a URL to see real-user data (if available) and lab tests.</span></li><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span><strong>Search Console:</strong> the Core Web Vitals report groups your pages by status, using real-user data.</span></li></ul>
+<h3>Field data versus lab data</h3>
+<p>PageSpeed Insights shows two kinds of results, and mixing them up causes a lot of worry. Field data comes from real Chrome users visiting your site, gathered in the Chrome UX Report. It is what Google uses for page experience. Lab data comes from a single simulated test on a slow phone and connection. It is useful for diagnosing problems, but the score at the top can swing from one run to the next.</p>
+<p>Field data only appears once a page or site has enough eligible visitors to be included in the Chrome UX Report. Many small business sites in Dubai don't, so you will only see lab results. That is fine. Use the lab test to find the biggest problems, fix them, and don't chase a perfect 100.</p>
+<h2 id="common-fixes">Common fixes</h2>
+<div class="infographic reveal"><p class="ig-kicker">SEO and AI search · Dubai</p><h3 class="ig-title">What usually helps</h3><div class="steps"><div class="step"><h4>Slow LCP</h4><p>Compress and resize the hero image, serve modern formats like WebP, and preload it.</p></div><div class="step"><h4>Poor INP</h4><p>Reduce heavy scripts, especially third-party widgets and chat tools that load on every page.</p></div><div class="step"><h4>High CLS</h4><p>Set width and height on images and embeds, and reserve space for banners and fonts.</p></div></div></div>
+<h3>What slows down sites in Dubai specifically</h3>
+<p>The same culprits come up again and again on UAE business sites I review:</p>
+<ul class="keylist"><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span>Autoplaying background videos in the hero section, often several megabytes, on a page most people open on a phone.</span></li><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span>Several chat and messaging widgets loading at once, plus a WhatsApp button script, on every page.</span></li><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span>Arabic and English web fonts loaded in many weights, which delays text and causes layout shifts when they swap in.</span></li><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span>Embedded review carousels, booking widgets and map embeds placed near the top of the page.</span></li><li><ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon><span>Page builders that add large amounts of code for simple layouts.</span></li></ul>
+<div class="infographic reveal"><p class="ig-kicker">SEO and AI search · Dubai</p><h3 class="ig-title">Where to start</h3><div class="table-wrap"><table><thead><tr><th scope="col">If your worst metric is</th><th scope="col">Check first</th><th scope="col">Usually needs</th></tr></thead><tbody><tr><td>LCP</td><td>Size and format of the hero image or video</td><td>Owner or designer can often fix it</td></tr><tr><td>INP</td><td>Third-party scripts and heavy plugins</td><td>Developer help for anything beyond removing widgets</td></tr><tr><td>CLS</td><td>Images without dimensions, late banners, font swaps</td><td>Small template changes, usually quick</td></tr></tbody></table></div></div>
+<h2 id="does-it-affect-rankings">Does it affect rankings?</h2>
+<p>Page experience is one of many signals Google uses, and great content still matters more. But speed affects people directly: slow pages lose visitors before they ever read anything, especially on mobile.</p>
+<p>So I treat Core Web Vitals as a hygiene task. Get the scores out of "poor", ideally into "good", then move on. A page with an excellent score and weak content will not outrank a helpful page that is merely acceptable. For the wider list of technical checks, see the <a href="./technical-seo-checklist.html">technical SEO checklist</a>, and for quick conversion fixes see <a href="./cro-quick-wins.html">CRO quick wins</a>.</p>
+<div class="callout"><ion-icon name="flash-outline" aria-hidden="true"></ion-icon><div><p class="ttl">Quick win</p><p>The hero image is the most common cause of slow LCP on small business sites. Resizing it alone often fixes the score.</p></div></div>
+<p>Speed is built in from the start on the sites I make for clients; you can see the approach on <a href="../dubai/website-design.html">website design in Dubai</a>.</p>
+<h2 id="faq">Questions people ask</h2><div class="accordion"><div class="acc-item"><button class="acc-head" aria-expanded="false"><span>What is a good Core Web Vitals score?</span><ion-icon class="ico" name="add-outline" aria-hidden="true"></ion-icon></button><div class="acc-panel"><div class="acc-panel-inner">LCP of 2.5 seconds or less, INP of 200 milliseconds or less and CLS of 0.1 or less, at the 75th percentile of page loads.</div></div></div><div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Do Core Web Vitals affect SEO?</span><ion-icon class="ico" name="add-outline" aria-hidden="true"></ion-icon></button><div class="acc-panel"><div class="acc-panel-inner">They're part of page experience, which is one of many ranking signals. Content relevance matters more, but speed affects visitors directly.</div></div></div><div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Why is my site fast on Wi-Fi but slow in PageSpeed Insights?</span><ion-icon class="ico" name="add-outline" aria-hidden="true"></ion-icon></button><div class="acc-panel"><div class="acc-panel-inner">Tests simulate slower devices and connections. Real-user data shows what your visitors actually experience.</div></div></div><div class="acc-item"><button class="acc-head" aria-expanded="false"><span>What replaced First Input Delay?</span><ion-icon class="ico" name="add-outline" aria-hidden="true"></ion-icon></button><div class="acc-panel"><div class="acc-panel-inner">Interaction to Next Paint (INP) replaced FID as a Core Web Vital on 12 March 2024.</div></div></div><div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Why does PageSpeed Insights say there is no real-user data for my site?</span><ion-icon class="ico" name="add-outline" aria-hidden="true"></ion-icon></button><div class="acc-panel"><div class="acc-panel-inner">Field data only appears when a page or site has enough Chrome visitors to be included in the Chrome UX Report. Use the lab results until then.</div></div></div></div>
+  </div>
+  <section class="sources" aria-labelledby="src"><h2 id="src">Sources</h2><ol><li><a href="https://web.dev/articles/vitals" target="_blank" rel="noopener">web.dev: Web Vitals</a></li><li><a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noopener">Google Search Central: Understanding page experience</a></li><li><a href="https://web.dev/articles/defining-core-web-vitals-thresholds" target="_blank" rel="noopener">web.dev: Defining the Core Web Vitals metrics thresholds</a></li><li><a href="https://web.dev/blog/inp-cwv-march-12" target="_blank" rel="noopener">web.dev: Interaction to Next Paint becomes a Core Web Vital on March 12</a></li><li><a href="https://developer.chrome.com/docs/crux/methodology" target="_blank" rel="noopener">Chrome for Developers: CrUX methodology</a></li></ol><p class="mono">Checked against these sources on 9 Oct 2026. Rules and platform features change, so confirm anything legal or financial with the official body before acting on it.</p></section>
+  <div class="author-box">
+    <img src="../assets/images/lohith-avatar.webp" alt="Lohith Lalesh" width="64" height="64" loading="lazy">
+    <div>
+      <h3><a href="../about.html" rel="author">Lohith Lalesh</a></h3>
+      <p class="role">Marketing specialist · Dubai, UAE</p>
+      <p>I build websites, campaigns, content and launches for businesses in Dubai, and run the paid media, SEO and tracking around them. Certified by Anthropic, HubSpot and Meta. <a href="../about.html">More about me and how I write these notes</a>.</p>
+    </div>
+  </div>
+  <div class="article-cta">
+    <h3>Want more people finding you on Google?</h3>
+    <p>I set up the technical basics, write the pages and track what brings enquiries.</p>
+    <div class="btn-row">
+      <a href="mailto:lohithlalesh@gmail.com?subject=Core Web Vitals" class="btn"><span>Get a quote</span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+      <a href="../dubai/local-seo.html" class="btn btn-secondary"><span>See the service</span></a>
+    </div>
+  </div>
+  <section class="related"><h2>Keep reading</h2><div class="related-grid"><article class="post-card"><div class="body"><span class="pill">SEO and AI search</span><h2>Can you use AI to write website content? What Google's policies actually say</h2><p>Google's position on AI-generated content, what 'scaled content abuse' means, how E-E-A-T fits in, and how to use AI…</p><a href="./ai-content-google-policy.html" class="layer-link" aria-label="Read: Can you use AI to write website content? What Google&#x27;s policies actually say"></a></div></article><article class="post-card"><div class="body"><span class="pill">SEO and AI search</span><h2>SEO for small businesses in Dubai: where to start</h2><p>A practical starting point for SEO in Dubai: what to fix first, what to write, how to measure, and what to ignore when…</p><a href="./seo-dubai-small-business-guide.html" class="layer-link" aria-label="Read: SEO for small businesses in Dubai: where to start"></a></div></article><article class="post-card"><div class="body"><span class="pill">Paid ads</span><h2>Conversion tracking setup: GA4, Meta Pixel and Conversions API</h2><p>How to track leads and sales properly for a UAE business: GA4 key events, Google Ads conversions, Meta Pixel and…</p><a href="./conversion-tracking-ga4-meta.html" class="layer-link" aria-label="Read: Conversion tracking setup: GA4, Meta Pixel and Conversions API"></a></div></article></div></section>
+</article>
+</main>
+<section class="blog-contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <span class="mono">Marketing in Dubai · freelancer rates · fixed quotes in AED</span>
+    <h2 id="contact-title">Bring me in before the work becomes a handoff problem.</h2>
+    <ul class="links">
+      <li><a class="mail" href="mailto:lohithlalesh@gmail.com?subject=Quote%20request">lohithlalesh@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/lohith-lalesh/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><a href="https://www.behance.net/gallery/241374557/Full-Digital-Marketing-Portfolio" target="_blank" rel="noopener">Behance ↗</a></li>
+    </ul>
+  </div>
+</section>
+<footer class="site-foot"><div class="container mono"><span>© 2026 Lohith Lalesh · Marketing in Dubai, UAE</span><span><a href="../about.html">About the author</a> · <a href="./index.html">All notes</a> · <a href="../index.html">Home</a></span></div></footer>
+<script src="./blog.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

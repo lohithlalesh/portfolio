@@ -50,18 +50,111 @@ Six working modes: design and video, content writing, social media, UI design, S
 - HubSpot Marketing Hub Software: https://app-eu1.hubspot.com/academy/achievements/qds82rz3/en/1/lohith-lalesh/hubspot-marketing-hub-software
 - Meta: https://www.facebookblueprint.com/student/award/YrUV5FjmMrDFQHb9hH5iHouE
 
-## Field notes (blog)
+## About the author
 
-- [The programmatic ads hack: real power, real fraud, and how much is hoax](https://lohithlalesh.com/blog/programmatic-ads-hack-or-hoax.html)
-- [Claude Skills, ranked: the GitHub repos a marketer should steal](https://lohithlalesh.com/blog/claude-skills-from-github.html)
-- [AI fluency is the new baseline for marketers](https://lohithlalesh.com/blog/ai-fluency-for-marketers.html)
+- [About Lohith Lalesh](https://lohithlalesh.com/about.html): experience, certifications and the editorial policy for these guides (sources checked and listed on every article).
+
+## Guides for Dubai and UAE businesses
+
+Each guide answers one question, lists its sources at the end and was checked on 9 Oct 2026.
+
+### Hiring a marketer
+
+- [Hiring a digital marketing freelancer in Dubai: a practical guide](https://lohithlalesh.com/blog/digital-marketing-freelancer-dubai.html): How to find, vet and work with a digital marketing freelancer in Dubai: what they do, what to ask, how pricing works and how to avoid the common mistakes.
+- [What a digital marketing consultant in Dubai does, and when you need one](https://lohithlalesh.com/blog/digital-marketing-consultant-dubai.html): The difference between a digital marketing consultant, a freelancer and an agency in Dubai, what a consultant should deliver, and how to tell if you need one.
+- [Freelancer or agency in Dubai? An honest comparison for small businesses](https://lohithlalesh.com/blog/freelancer-vs-agency-dubai.html): Should a Dubai business hire a marketing freelancer or an agency? Cost, speed, quality, risk and the situations where each is the better choice.
+- [How much does digital marketing cost in Dubai? What actually drives the price](https://lohithlalesh.com/blog/digital-marketing-cost-dubai.html): The factors that set the price of digital marketing in Dubai: scope, channels, content volume, ad spend, languages and who does the work. How to budget without overpaying.
+- [15 questions to ask before you hire a marketer in Dubai](https://lohithlalesh.com/blog/questions-before-hiring-marketer-dubai.html): The questions that reveal whether a marketing freelancer, consultant or agency in Dubai knows their craft, with what good answers sound like.
+- [Red flags when hiring a marketing or SEO freelancer in the UAE](https://lohithlalesh.com/blog/marketing-freelancer-red-flags.html): Warning signs that a marketing or SEO freelancer in Dubai will waste your money: guaranteed rankings, fake engagement, account ownership grabs, vague reporting and more.
+- [Retainer or project fee? How to pay a marketing freelancer](https://lohithlalesh.com/blog/retainer-vs-project-pricing.html): When a monthly retainer makes sense, when a fixed project fee is better, and how to structure either so you get value and stay in control.
+- [How to write a marketing brief a freelancer can actually work from](https://lohithlalesh.com/blog/marketing-brief-template.html): A one-page marketing brief template for Dubai businesses: goal, audience, offer, budget, timeline and constraints, with examples of good and vague answers.
+- [Is your marketing freelancer licensed? Freelance permits and VAT in the UAE](https://lohithlalesh.com/blog/freelance-permit-uae-marketers.html): What licence a marketing freelancer needs to work with your business in the UAE, how freelance permits work, and when VAT applies to their invoices.
+- [In-house marketer or freelancer: what a Dubai SME should choose](https://lohithlalesh.com/blog/in-house-vs-freelance-marketer-dubai.html): Should a small business in Dubai hire a full-time marketer or work with a freelancer? Cost beyond salary, skills coverage, speed and when to switch.
+- [What to outsource, and what to keep, in small business marketing](https://lohithlalesh.com/blog/outsourcing-marketing-small-business-uae.html): A practical split for UAE small business owners: which marketing tasks to outsource to a freelancer, which to keep in-house, and how to hand over without losing control.
+- [A 90-day marketing plan for a new business in Dubai](https://lohithlalesh.com/blog/first-90-days-marketing-plan-dubai-startup.html): A week-by-week marketing plan for the first 90 days of a new business in Dubai: foundations, first customers, measurement and what to scale.
+
+### Local SEO
+
+- [Local SEO checklist for Dubai businesses](https://lohithlalesh.com/blog/local-seo-checklist-dubai.html): A complete local SEO checklist for businesses in Dubai: Google Business Profile, website, reviews, listings and tracking, in the order that gets results fastest.
+- [How to set up and optimise a Google Business Profile in Dubai](https://lohithlalesh.com/blog/google-business-profile-dubai.html): Step-by-step guide to creating, verifying and optimising a Google Business Profile for a Dubai business, with the mistakes that get profiles suspended.
+- [How Google decides who shows up on the map in Dubai](https://lohithlalesh.com/blog/google-maps-ranking-dubai.html): What Google says about local ranking, relevance, distance and prominence, and what each means in practice for a business competing in Dubai.
+- [How to get more Google reviews in the UAE without breaking the rules](https://lohithlalesh.com/blog/google-reviews-uae.html): Ethical ways to get more Google reviews for a UAE business, what Google forbids (incentives, review gating, staff quotas) and how to reply to negative reviews.
+- [How to show up for "near me" searches in Dubai](https://lohithlalesh.com/blog/near-me-searches-dubai.html): What 'near me' searches are, how Google handles them in Dubai, and the practical steps that help your business appear for them.
+- [SEO for businesses serving Dubai, Abu Dhabi and Sharjah, without doorway pages](https://lohithlalesh.com/blog/multi-location-seo-uae.html): How to rank across several emirates or areas without creating spammy location pages: real branch pages, service-area profiles and content that is genuinely different.
+- [LocalBusiness schema markup: a plain-English guide](https://lohithlalesh.com/blog/local-business-schema.html): What LocalBusiness structured data is, what to include for a Dubai business, an example you can adapt, and how to test it.
+- [Business listings and NAP consistency for UAE businesses](https://lohithlalesh.com/blog/local-citations-uae.html): Why your business name, address and phone number need to match everywhere, which listings matter for UAE businesses, and how to clean up inconsistencies.
+
+### SEO and AI search
+
+- [SEO for small businesses in Dubai: where to start](https://lohithlalesh.com/blog/seo-dubai-small-business-guide.html): A practical starting point for SEO in Dubai: what to fix first, what to write, how to measure, and what to ignore when you have limited time and budget.
+- [How long does SEO take to work in the UAE?](https://lohithlalesh.com/blog/how-long-seo-takes-uae.html): Realistic SEO timelines for UAE businesses: what can improve in weeks, what takes months, and the factors that make SEO faster or slower.
+- [SEO or Google Ads first? A decision guide for Dubai businesses](https://lohithlalesh.com/blog/seo-vs-google-ads-dubai.html): Should a Dubai business invest in SEO or Google Ads first? How they differ in speed, cost and durability, and how to combine them.
+- [How to do keyword research for the Dubai market](https://lohithlalesh.com/blog/keyword-research-dubai.html): A step-by-step keyword research process for Dubai businesses using free tools: Google autocomplete, Keyword Planner set to the UAE, Search Console and competitor pages.
+- [Arabic SEO and bilingual websites in the UAE](https://lohithlalesh.com/blog/arabic-seo-bilingual-websites.html): How to set up an English and Arabic website for SEO in the UAE: separate URLs, hreflang, right-to-left design, native copywriting and Arabic keyword research.
+- [A technical SEO checklist for small business websites](https://lohithlalesh.com/blog/technical-seo-checklist.html): The technical SEO basics every small business website needs: indexing, sitemaps, HTTPS, mobile, speed, structured data, redirects and Search Console checks.
+- [Core Web Vitals explained for business owners](https://lohithlalesh.com/blog/core-web-vitals-explained.html): What LCP, INP and CLS mean in plain language, Google's 'good' thresholds, how to check your site, and the fixes that usually help most.
+- [How to show up in ChatGPT, Perplexity and Google AI answers](https://lohithlalesh.com/blog/ai-search-visibility.html): What helps a business get mentioned in AI assistants and AI search results: crawler access, clear facts, consistent profiles, structured data and genuinely useful pages.
+- [What is llms.txt, and should your business have one?](https://lohithlalesh.com/blog/llms-txt-guide.html): What the llms.txt file is, who proposed it, what to put in it for a small business website, and what it can and can't do for AI visibility.
+- [Can you use AI to write website content? What Google's policies actually say](https://lohithlalesh.com/blog/ai-content-google-policy.html): Google's position on AI-generated content, what 'scaled content abuse' means, how E-E-A-T fits in, and how to use AI tools without risking your rankings.
+
+### Paid ads
+
+- [Google Ads for Dubai businesses: a setup guide that avoids wasted spend](https://lohithlalesh.com/blog/google-ads-dubai-guide.html): How to set up Google Ads for a Dubai business: tracking, campaign structure, keywords, locations, ad copy and the settings that quietly waste budget.
+- [Meta ads in the UAE: Facebook and Instagram advertising basics](https://lohithlalesh.com/blog/meta-ads-uae-guide.html): How to run Facebook and Instagram ads in the UAE: audience reach, campaign objectives, creative that works, tracking with Pixel and Conversions API, and common mistakes.
+- [TikTok ads in the UAE: when they make sense](https://lohithlalesh.com/blog/tiktok-ads-uae.html): Who TikTok ads reach in the UAE, which businesses they suit, the creative style that works, and how to measure them properly.
+- [Snapchat ads in the UAE: the platform marketers forget](https://lohithlalesh.com/blog/snapchat-ads-uae.html): Snapchat ad reach in the UAE, which audiences and businesses it suits, ad formats and how to test it alongside Meta and TikTok.
+- [LinkedIn ads for B2B companies in Dubai](https://lohithlalesh.com/blog/linkedin-ads-dubai-b2b.html): When LinkedIn ads make sense for Dubai B2B companies, how to target decision makers, which formats to use, and how to keep cost per lead under control.
+- [How much should a Dubai small business spend on ads?](https://lohithlalesh.com/blog/ad-budget-dubai.html): A practical way to set an advertising budget for a Dubai small business, working back from customer value, conversion rates and a fair test period.
+- [Conversion tracking setup: GA4, Meta Pixel and Conversions API](https://lohithlalesh.com/blog/conversion-tracking-ga4-meta.html): How to track leads and sales properly for a UAE business: GA4 key events, Google Ads conversions, Meta Pixel and Conversions API, WhatsApp clicks and calls.
+- [Click-to-WhatsApp ads and WhatsApp Business for UAE businesses](https://lohithlalesh.com/blog/click-to-whatsapp-ads.html): How UAE businesses can use click-to-WhatsApp ads, the WhatsApp Business app and the WhatsApp Business Platform to turn ads into conversations and sales.
+- [Why your ads bring low-quality leads, and how to fix it](https://lohithlalesh.com/blog/low-quality-leads-fix.html): The common causes of junk leads from Meta and Google ads in the UAE, from instant forms to broad targeting, and practical fixes that raise lead quality.
+- [Retargeting done right: reaching people who almost bought](https://lohithlalesh.com/blog/retargeting-uae.html): How to set up retargeting for a UAE business across Meta, Google and TikTok: audiences, frequency, messaging and privacy considerations.
+
+### Social and content
+
+- [Instagram marketing for Dubai small businesses](https://lohithlalesh.com/blog/instagram-marketing-dubai.html): How small businesses in Dubai can use Instagram well: profile setup, content formats, posting rhythm, Reels, Stories, DMs and measuring what matters.
+- [Organic TikTok for UAE brands: a starter plan](https://lohithlalesh.com/blog/tiktok-organic-uae.html): A practical 30-day plan for UAE brands starting on TikTok: content pillars, formats, posting cadence, trends, creators and what to measure.
+- [LinkedIn personal branding for Dubai founders and consultants](https://lohithlalesh.com/blog/linkedin-personal-brand-dubai.html): How Dubai founders and consultants can build a LinkedIn presence that brings opportunities: profile, posting themes, formats, consistency and engagement.
+- [Influencer marketing in the UAE: the advertiser permit and what brands must check](https://lohithlalesh.com/blog/influencer-marketing-uae-rules.html): The UAE Media Council's advertiser permit for influencers and online advertisers: who needs it, from when, exemptions, penalties and what brands should check before paying a creator.
+- [UGC for UAE brands: briefs, rights and what to check](https://lohithlalesh.com/blog/ugc-creators-uae.html): How UAE brands can work with UGC creators: what UGC is, writing a creator brief, usage rights, disclosure, permits and getting content that performs in ads.
+- [Short-form video on a small budget: a production system](https://lohithlalesh.com/blog/short-form-video-budget.html): A simple system for small businesses to produce Reels, TikToks and Shorts every week: planning, batch filming on a phone, editing, captions and repurposing.
+- [What a social media manager in Dubai should deliver each month](https://lohithlalesh.com/blog/social-media-manager-dubai-what-to-expect.html): What to expect from a social media manager or freelancer in Dubai: monthly deliverables, reporting, response times and how to judge whether it is working.
+- [Arabic and English content: how bilingual brands plan social media](https://lohithlalesh.com/blog/bilingual-content-arabic-english.html): How UAE brands can plan Arabic and English social media content: when to go bilingual, separate or combined posts, tone, design for right-to-left and working with writers.
+
+### UAE calendar
+
+- [UAE marketing calendar: the dates that move sales](https://lohithlalesh.com/blog/uae-marketing-calendar.html): The UAE dates every marketer should plan around: Ramadan and Eid, Dubai Shopping Festival, National Day, summer, back to school, White Friday and more.
+- [Ramadan marketing in the UAE: planning for 2027](https://lohithlalesh.com/blog/ramadan-marketing-uae.html): How to plan respectful, effective Ramadan marketing in the UAE: projected 2027 dates, how routines change, content tone, ad timing and Eid campaigns.
+- [How small businesses can use Dubai Shopping Festival season](https://lohithlalesh.com/blog/dubai-shopping-festival-marketing.html): How small businesses in Dubai can take advantage of Dubai Shopping Festival season: offers, footfall, tourists, content and ads, even without being an official partner.
+
+### Websites
+
+- [What a small business website in the UAE must have](https://lohithlalesh.com/blog/small-business-website-checklist-uae.html): A checklist for small business websites in the UAE: clear offer, WhatsApp and call buttons, mobile speed, trust signals, local SEO basics, privacy notice and tracking.
+- [Landing page or full website? Which brings more leads](https://lohithlalesh.com/blog/landing-page-vs-website.html): When a single landing page beats a full website and when it does not, for ads, SEO and lead generation, with a simple way to decide.
+- [Webflow vs WordPress vs Shopify for UAE businesses](https://lohithlalesh.com/blog/webflow-wordpress-shopify-uae.html): Choosing a website platform in the UAE: Webflow, WordPress and Shopify compared on ease of editing, SEO, e-commerce, Arabic support, cost and maintenance.
+- [UAE data protection (PDPL) basics for your website and marketing lists](https://lohithlalesh.com/blog/uae-pdpl-website-compliance.html): What the UAE's Personal Data Protection Law (Federal Decree-Law No. 45 of 2021) means for marketing: consent, privacy notices, email and WhatsApp lists, and free zone exceptions.
+- [10 conversion quick wins for service business websites](https://lohithlalesh.com/blog/cro-quick-wins.html): Ten practical changes that help service business websites in the UAE turn more visitors into enquiries, from headline clarity to WhatsApp buttons and form length.
+
+### Industries
+
+- [Real estate marketing in Dubai: permits, portals and lead quality](https://lohithlalesh.com/blog/real-estate-marketing-dubai.html): How real estate brokers and developers in Dubai can market properly: DLD advertising permits via Trakheesi, portals, social media, paid ads and getting better-quality leads.
+- [Marketing a clinic in Dubai under the DHA social media standards](https://lohithlalesh.com/blog/healthcare-clinic-marketing-dubai.html): How Dubai clinics and doctors can market on social media within the Dubai Health Authority's standards: banned claims, before-and-after rules, influencer liability and approvals.
+- [Restaurant marketing in Dubai: maps, delivery apps and Reels](https://lohithlalesh.com/blog/restaurant-marketing-dubai.html): How restaurants and cafes in Dubai can attract diners: Google Maps, delivery app listings, Instagram and TikTok content, creators and reviews.
+- [E-commerce marketing in the UAE: marketplaces, payments and trust](https://lohithlalesh.com/blog/ecommerce-marketing-uae.html): How online stores can grow in the UAE: own store vs marketplaces like Amazon.ae and Noon, payment options, delivery expectations, ads, White Friday and trust signals.
+
+## Essays
+
+- [The programmatic ads "hack": real power, real fraud, and how much is hoax](https://lohithlalesh.com/blog/programmatic-ads-hack-or-hoax.html)
+- [Claude Skills, ranked: the GitHub repos a marketer should actually steal](https://lohithlalesh.com/blog/claude-skills-from-github.html)
+- [AI fluency is the new baseline for marketers - and the free way to get there](https://lohithlalesh.com/blog/ai-fluency-for-marketers.html)
 - [I lost 40 kg. It rebuilt my career more than any course.](https://lohithlalesh.com/blog/losing-40kg-career-lessons.html)
-- [What my first blog taught me about Google indexing](https://lohithlalesh.com/blog/how-i-learned-google-indexing.html)
-- [Why paid media starts before Ads Manager](https://lohithlalesh.com/blog/paid-media-before-ads-manager.html)
+- [What my first blog - a coin-flip post from 2020 - taught me about Google indexing](https://lohithlalesh.com/blog/how-i-learned-google-indexing.html)
+- [Why paid media starts long before you open Ads Manager](https://lohithlalesh.com/blog/paid-media-before-ads-manager.html)
 - [A content calendar isn't a schedule. It's a delivery system.](https://lohithlalesh.com/blog/content-calendar-delivery-system.html)
 
 ## FAQ
 
 - Is Lohith Lalesh based in Dubai? Yes. He is based in Dubai and works with brands across the UAE.
 - What can he help a business with? Websites, presentations, podcasts, launches and social media, plus paid media, SEO and tracking.
+- Is he affordable? He works at freelancer rates with a fixed quote in AED agreed before work starts.
 - How do you start? Email lohithlalesh@gmail.com with a rough idea and a brief.

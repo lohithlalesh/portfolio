@@ -267,3 +267,29 @@ ion-icon{flex:none}
 .svc-links span{color:var(--muted);font-size:15.5px}
 .svc-links a:hover strong{color:var(--amber)}
 .svc-links a:hover::after{transform:translateX(4px)}
+
+/* long-form posts: contents, numbered lists, tables, sources */
+.toc{margin:0 0 clamp(32px,4vw,48px);padding:18px 0;border-block:1px solid var(--line)}
+.toc .mono{color:var(--sage);margin:0 0 10px}
+.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:32px}
+.toc li{break-inside:avoid;margin-bottom:6px;font-size:15.5px}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--paper)}
+.numlist{counter-reset:n;list-style:none;padding:0;margin:0 0 1.2em}
+.numlist li{counter-increment:n;position:relative;padding:12px 0 12px 44px;border-top:1px solid var(--line)}
+.numlist li:last-child{border-bottom:1px solid var(--line)}
+.numlist li::before{content:counter(n,decimal-leading-zero);position:absolute;left:0;top:14px;font:500 12px/1 var(--f-mono);letter-spacing:.1em;color:var(--amber)}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+.table-wrap th{text-align:left;font:500 12px/1.4 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--sage);padding:10px 12px 10px 0;border-bottom:1px solid var(--paper)}
+.table-wrap td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted)}
+.table-wrap td:first-child{color:var(--paper)}
+.sources{margin-top:clamp(48px,6vw,72px);padding-top:20px;border-top:1px solid var(--line)}
+.sources h2{font-size:clamp(28px,3vw,36px);margin:0 0 12px}
+.sources ol{padding-left:1.3em;margin:0 0 14px;color:var(--muted);font-size:15px}
+.sources li{margin-bottom:6px}
+.sources a{color:var(--paper);text-decoration-color:var(--sage);text-underline-offset:3px}
+.sources .mono{color:var(--muted);text-transform:none;letter-spacing:.02em}
+.byline-meta a,.author-box h3 a{text-decoration:none}
+.author-box p a{color:var(--paper);text-decoration-color:var(--sage);text-underline-offset:3px}
+@media (max-width:640px){.toc ol{columns:1}}
