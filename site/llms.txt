@@ -102,6 +102,7 @@ Each guide answers one question, lists its sources at the end and was checked on
 - [AI content looked smarter. Why companies are bringing human writers back](https://lohithlalesh.com/blog/ai-content-backlash-human-writers): CNET, Sports Illustrated, Klarna and even Semrush show the same lesson: automation is a tool, and original work with a real person behind it is what gets cited.
 - [Query fan-out and information gain: why crowded SERPs are not the game](https://lohithlalesh.com/blog/query-fan-out-information-gain): What Google's query fan-out does in AI Mode, what information gain means, and how a small Dubai business can create original data that AI answers want to cite.
 - [Are backlinks still worth it? Why manufactured links stopped working](https://lohithlalesh.com/blog/backlinks-losing-authority): Links still count in Google, but Web 2.0 links, PBNs and link swaps get neutralised. What Google staff have said, and what builds real authority for a business.
+- [Do AI-generated images rank in Google Images? What I see, and what Google says](https://lohithlalesh.com/blog/ai-images-google-images-indexing): On my sites, Figma graphics show up in Google Images and AI images mostly do not. What Google has confirmed, what is theory, and how to test your own site.
 
 ### Paid ads
 
