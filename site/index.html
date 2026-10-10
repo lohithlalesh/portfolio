@@ -213,20 +213,6 @@ section{padding-block:clamp(80px,11vw,160px)}
 
 /* services */
 .services{background:var(--ink)}
-.svc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:clamp(32px,6vw,96px);align-items:start}
-.svc-head{position:sticky;top:120px}
-.svc-list{list-style:none;margin:0;padding:0;counter-reset:svc}
-.svc{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:clamp(16px,2.4vw,32px);padding-block:clamp(26px,3.4vw,44px);border-top:1px solid var(--line);opacity:.32;transition:opacity .45s ease}
-.svc:last-child{border-bottom:1px solid var(--line)}
-.svc.is-on{opacity:1}
-.svc::before{counter-increment:svc;content:counter(svc,decimal-leading-zero);font:500 12px/1 var(--f-mono);letter-spacing:.1em;color:var(--amber);padding-top:.9em}
-.svc h3{font-size:clamp(46px,6vw,88px);line-height:.95}
-.svc h3 em{font-style:italic;color:var(--sage)}
-.svc p{grid-column:2;color:var(--muted);max-width:46ch;margin-top:14px}
-.svc .mono{grid-column:2;margin-top:12px;color:var(--paper);opacity:.7}
-.svc .svc-more{grid-column:2;margin-top:14px;color:var(--sage);opacity:1;text-decoration:none;justify-self:start;border-bottom:1px solid rgba(140,199,166,.4);padding-bottom:2px}
-.svc .svc-more:hover{color:var(--amber);border-color:var(--amber)}
-.svc-foot{display:flex;flex-wrap:wrap;gap:14px 28px;margin-top:30px}
 
 /* modes with hairline figures */
 .modes{background:var(--ink-2)}
@@ -331,14 +317,10 @@ footer a:hover{color:var(--paper)}
   .cert-row{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:860px){
-  .svc-grid,.faq-grid,.modes-grid{grid-template-columns:minmax(0,1fr)}
-  .svc-head{position:static}
+  .faq-grid,.modes-grid{grid-template-columns:minmax(0,1fr)}
   .fig-stage{display:none}
   .mode{min-height:0;opacity:1;padding-block:34px;border-top:1px solid var(--line)}
   .mode .inline-fig{display:block;order:-1;width:min(100%,360px);margin:0 0 6px -8px}
-  .svc{opacity:1}
-  .svc h3{transition:color .4s}
-  .svc:not(.is-on) h3{color:rgba(243,238,226,.55)}
   .modes{padding-bottom:40px}
   .work-pin{padding-block:56px 40px}
   .work-pin{min-height:0}
@@ -372,8 +354,6 @@ footer a:hover{color:var(--paper)}
   .scroll-cue{z-index:3;bottom:calc(env(safe-area-inset-bottom,0px) + 22px)}
   .quote blockquote{font-size:clamp(32px,9.4vw,44px)}
   .h2{font-size:clamp(42px,12.5vw,60px)}
-  .svc{padding-block:26px}
-  .svc h3{font-size:clamp(44px,13vw,60px)}
   /* swipe rails for modes and work */
   .rail-m{display:flex!important;flex-direction:row!important;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(-1*var(--gutter));padding:4px var(--gutter) 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .rail-m::-webkit-scrollbar{display:none}
@@ -398,7 +378,158 @@ footer a:hover{color:var(--paper)}
 }
 @media (prefers-reduced-motion:reduce){
   .sway-l,.sway-r,.breathe,.ticker-track,.scroll-cue i{animation:none}
-  .svc,.mode{opacity:1}
+  .mode{opacity:1}
+}
+
+/* ---------- services: the stack ---------- */
+.svc-head{max-width:640px;margin-bottom:clamp(28px,5vw,64px)}
+.stack{list-style:none;margin:0;padding:0;display:grid;gap:clamp(18px,3vh,40px)}
+.card{--bg:var(--paper);--fg:var(--ink);--acc:var(--cobalt);--soft:rgba(6,16,46,.12);
+  position:sticky;top:calc(84px + var(--i)*14px);min-height:min(620px,calc(100svh - 140px));
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,4vw,56px);align-items:stretch;
+  padding:clamp(22px,3.6vw,48px);border-radius:28px;background:var(--bg);color:var(--fg);overflow:hidden;
+  transform-origin:50% 0;box-shadow:0 -18px 50px rgba(2,8,28,.35);will-change:transform}
+.card::after{content:"";position:absolute;inset:0;background:#020818;opacity:var(--shade,0);pointer-events:none;border-radius:inherit}
+.c-deck{--bg:var(--cobalt);--fg:var(--paper);--acc:var(--amber);--soft:rgba(243,238,226,.16)}
+.c-pod{--bg:var(--amber);--fg:var(--ink);--acc:var(--cobalt-deep);--soft:rgba(6,16,46,.14)}
+.c-launch{--bg:#0b1a4a;--fg:var(--paper);--acc:var(--sage);--soft:rgba(243,238,226,.14)}
+.c-social{--bg:var(--sage);--fg:var(--ink);--acc:var(--cobalt);--soft:rgba(6,16,46,.14)}
+.c-map{--bg:var(--cobalt-deep);--fg:var(--paper);--acc:var(--amber);--soft:rgba(243,238,226,.16)}
+.card-txt{display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-width:0;position:relative;z-index:1}
+.card-no{font-size:12px;letter-spacing:.14em;opacity:.7}
+.card h3{font-family:var(--f-display);font-weight:400;font-size:clamp(54px,7.4vw,112px);line-height:.9;letter-spacing:-.01em;margin:auto 0 0}
+.card h3 em{font-style:italic;color:var(--acc)}
+.card-line{font-family:var(--f-display);font-style:italic;font-size:clamp(23px,2.3vw,34px);line-height:1.12;max-width:20ch;margin:0}
+.card-chips{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.72;line-height:1.7;margin:0}
+.card-more{align-self:flex-start;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:inherit;text-decoration:none;padding:12px 18px;border-radius:999px;border:1px solid currentColor;transition:background .25s,color .25s}
+.card-more:hover{background:var(--fg);color:var(--bg)}
+.svc-stage{position:relative;border-radius:20px;background:var(--soft);overflow:hidden;min-height:260px;isolation:isolate}
+.svc-stage *{animation-play-state:paused}
+.card.is-in .svc-stage *{animation-play-state:running}
+.svc-foot{margin-top:30px}
+
+/* websites */
+.st-web .br{position:absolute;inset:12% 10% 14% 8%;background:#fff;border-radius:12px;box-shadow:0 20px 40px rgba(6,16,46,.18);overflow:hidden}
+.br-top{display:flex;gap:6px;align-items:center;padding:10px 12px;background:#eee8da}
+.br-top i{width:9px;height:9px;border-radius:50%;background:#d9cfbb}
+.br-top span{margin-left:10px;font:500 11px/1 var(--f-mono);color:#6b6457;background:#fff;padding:5px 10px;border-radius:999px}
+.br-body{padding:7% 8%;display:grid;gap:10px}
+.br-body b{display:block;height:12px;border-radius:6px;background:#dfe6fb;animation:pop 6s infinite both}
+.br-body .b1{height:26px;width:78%;background:var(--ink);animation-delay:0s}
+.br-body .b2{width:92%;animation-delay:.25s}.br-body .b3{width:60%;animation-delay:.4s}
+.br-body .cta{justify-self:start;margin-top:6px;font:600 13px/1 var(--f-body);color:#fff;background:#1f9d55;padding:11px 16px;border-radius:999px;animation:pop 6s infinite both,press 6s infinite;animation-delay:.6s,0s}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.row3 b{height:44px!important;background:#eef1fb!important;animation-delay:.8s!important}
+.cur{position:absolute;width:26px;height:26px;fill:var(--ink);stroke:#fff;stroke-width:1.2;left:0;top:0;animation:cur 6s infinite cubic-bezier(.6,0,.3,1)}
+.toast{position:absolute;right:6%;bottom:8%;display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);font:500 13px/1 var(--f-body);padding:12px 14px;border-radius:14px;box-shadow:0 14px 30px rgba(6,16,46,.3);animation:toast 6s infinite}
+.toast i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.2)}
+.toast small{font:400 11px/1 var(--f-mono);opacity:.6}
+@keyframes pop{0%,4%{opacity:0;transform:translateY(10px)}12%,92%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes cur{0%,30%{transform:translate(calc(var(--cx,120px) + 170px),calc(var(--cy,170px) + 110px))}48%{transform:translate(var(--cx,120px),var(--cy,170px))}52%{transform:translate(var(--cx,120px),var(--cy,170px)) scale(.85)}56%,100%{transform:translate(var(--cx,120px),var(--cy,170px))}}
+@keyframes press{0%,50%{filter:none}52%{filter:brightness(.8)}56%,100%{filter:none}}
+@keyframes toast{0%,54%{opacity:0;transform:translateY(16px) scale(.96)}60%,92%{opacity:1;transform:none}100%{opacity:0}}
+
+/* presentations */
+.st-deck{perspective:900px}
+.slide{position:absolute;left:14%;top:16%;width:72%;aspect-ratio:16/9;border-radius:12px;background:var(--paper);box-shadow:0 18px 40px rgba(2,8,28,.35);display:grid;place-items:center}
+.slide b{position:absolute;left:10%;top:16%;width:46%;height:10%;border-radius:6px;background:rgba(6,16,46,.85)}
+.slide i{position:absolute;left:10%;top:36%;width:70%;height:6%;border-radius:4px;background:rgba(6,16,46,.15)}
+.s3{animation:fan3 6s infinite ease-in-out}.s2{animation:fan2 6s infinite ease-in-out}
+.s1{z-index:2;animation:lift 6s infinite ease-in-out}
+.s1 .w{position:absolute;font-family:var(--f-display);font-size:clamp(28px,3.4vw,52px);color:var(--ink);opacity:0;animation:word 6s infinite}
+.s1 .w2{animation-delay:2s}.s1 .w3{animation-delay:4s}
+.s1 .pg{position:absolute;right:5%;bottom:6%;font-size:10px;color:rgba(6,16,46,.5);font-style:normal}
+@keyframes fan3{0%,10%{transform:none}35%,85%{transform:translate(18%,22%) rotate(9deg)}100%{transform:none}}
+@keyframes fan2{0%,10%{transform:none}35%,85%{transform:translate(-14%,20%) rotate(-7deg)}100%{transform:none}}
+@keyframes lift{0%,100%{transform:translateY(0)}50%{transform:translateY(-4%)}}
+@keyframes word{0%{opacity:0;transform:translateY(12px)}6%,28%{opacity:1;transform:none}33%,100%{opacity:0;transform:translateY(-10px)}}
+
+/* podcasts */
+.st-pod .rec{position:absolute;left:6%;top:8%;font-size:11px;letter-spacing:.14em;display:flex;align-items:center;gap:8px}
+.rec i{width:9px;height:9px;border-radius:50%;background:#c8341c;animation:blink 1.2s infinite}
+.wave{position:absolute;left:6%;right:6%;top:24%;height:34%;display:flex;align-items:center;gap:3px}
+.wave i{flex:1;height:var(--h);border-radius:3px;background:var(--ink);opacity:.85;animation:bar 1.4s var(--d) infinite ease-in-out alternate}
+.ph{position:absolute;top:20%;height:42%;width:2px;left:6%;background:var(--cobalt-deep);animation:ph 6s infinite linear}
+.sel{position:absolute;top:22%;height:38%;left:34%;width:22%;border-radius:8px;background:rgba(2,47,149,.18);border:1.5px dashed var(--cobalt-deep);opacity:0;animation:sel 6s infinite}
+.clips{position:absolute;left:6%;right:6%;bottom:8%;display:flex;gap:12px;justify-content:center}
+.clips span{width:22%;aspect-ratio:9/14;max-height:120px;border-radius:10px;background:var(--ink);color:var(--paper);font:500 10px/1 var(--f-mono);letter-spacing:.08em;display:grid;place-items:end center;padding-bottom:10px;opacity:0;animation:clip 6s infinite}
+.clips span:nth-child(2){animation-delay:.25s}.clips span:nth-child(3){animation-delay:.5s}
+@keyframes bar{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+@keyframes blink{50%{opacity:.2}}
+@keyframes ph{from{left:6%}to{left:94%}}
+@keyframes sel{0%,30%{opacity:0}38%,70%{opacity:1}80%,100%{opacity:0}}
+@keyframes clip{0%,46%{opacity:0;transform:translateY(40px) scale(.8)}56%,90%{opacity:1;transform:none}100%{opacity:0}}
+
+/* launches */
+.st-launch{display:grid;grid-template-columns:1fr;align-content:center;gap:clamp(18px,3vw,30px);padding:8%}
+.count{position:relative;height:1em;font-family:var(--f-display);font-size:clamp(64px,8vw,120px);line-height:1;letter-spacing:0}
+.count span{position:absolute;left:0;top:0;opacity:0;animation:tick 8s infinite}
+.count span:nth-child(2){animation-delay:2s}.count span:nth-child(3){animation-delay:4s}
+.count .live{color:var(--sage);animation:tick 8s 6s infinite}
+.check{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.check li{display:flex;align-items:center;gap:10px;opacity:.45;animation:chk 8s infinite}
+.check li::before{content:"";width:16px;height:16px;border-radius:5px;border:1.5px solid currentColor;background:transparent;transition:.2s}
+.check li:nth-child(2){animation-delay:1.2s}.check li:nth-child(3){animation-delay:2.4s}.check li:nth-child(4){animation-delay:3.6s}.check li:nth-child(5){animation-delay:4.8s}
+.burst{position:absolute;right:20%;top:34%;width:14px;height:14px;border-radius:50%;border:2px solid var(--sage);opacity:0;animation:burst 8s 6s infinite}
+@keyframes tick{0%{opacity:0;transform:translateY(30%)}3%,22%{opacity:1;transform:none}25%,100%{opacity:0;transform:translateY(-30%)}}
+@keyframes chk{0%,4%{opacity:.45}8%,92%{opacity:1;color:var(--sage)}100%{opacity:.45}}
+@keyframes burst{0%{opacity:.9;transform:scale(1)}22%{opacity:0;transform:scale(14)}100%{opacity:0;transform:scale(14)}}
+
+/* social */
+.st-social{display:flex;align-items:center;justify-content:center;gap:7%}
+.phone{position:relative;width:min(42%,190px);aspect-ratio:9/18.5;border-radius:26px;background:var(--ink);padding:8px;box-shadow:0 20px 40px rgba(6,16,46,.25)}
+.phone::before{content:"";position:absolute;inset:8px;border-radius:19px;background:#0d1b48}
+.feed{position:relative;height:100%;border-radius:19px;overflow:hidden;display:grid;gap:8px;padding:8px;align-content:start;animation:feed 9s infinite linear}
+.tile{border-radius:12px;background:#fff;padding:6px;display:grid;gap:5px}
+.tile b{display:block;aspect-ratio:1;border-radius:8px;background:var(--amber)}
+.tile.t1 b{background:var(--cobalt)}.tile.t2 b{background:var(--sage)}.tile.t3 b{background:#c8341c}
+.tile i{display:block;height:5px;border-radius:3px;background:#e2e5ef}.tile i+i{width:60%}
+.phone{overflow:hidden}
+.heart{position:absolute;right:14%;bottom:12%;color:#ff4d6d;font-size:20px;opacity:0;animation:heart 3s infinite}
+.h2{animation-delay:1s;right:24%}.h3{animation-delay:2s;right:8%}
+.cal{display:grid;gap:10px;width:38%}
+.cal span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.cal div{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal i{aspect-ratio:1;border-radius:4px;background:rgba(6,16,46,.14);animation:day 7s var(--d) infinite}
+@keyframes feed{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+@keyframes heart{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:1;transform:translateY(-14px) scale(1)}60%{opacity:0;transform:translateY(-70px) scale(1.1)}100%{opacity:0}}
+@keyframes day{0%,6%{background:rgba(6,16,46,.14)}10%,88%{background:var(--ink)}100%{background:rgba(6,16,46,.14)}}
+
+/* local seo */
+.streets{position:absolute;inset:0;width:100%;height:100%}
+.streets path{fill:none;stroke:rgba(243,238,226,.18);stroke-width:10;stroke-linecap:round}
+.q{position:absolute;left:8%;right:8%;top:9%;background:var(--paper);color:var(--ink);border-radius:999px;padding:12px 18px;font-size:13px;box-shadow:0 10px 24px rgba(2,8,28,.3);z-index:2}
+.q span{display:inline-block;overflow:hidden;white-space:nowrap;vertical-align:bottom;border-right:2px solid var(--ink);animation:type 7s steps(18) infinite}
+.pin{position:absolute;width:16px;height:16px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:rgba(243,238,226,.45);opacity:0;animation:drop 7s infinite}
+.p1{left:20%;top:62%;animation-delay:1.3s}.p2{left:70%;top:48%;animation-delay:1.45s}.p3{left:78%;top:76%;animation-delay:1.6s}.p4{left:32%;top:82%;animation-delay:1.75s}
+.pin.you{left:48%;top:52%;width:30px;height:30px;background:var(--amber);animation:you 7s infinite;z-index:1}
+.pin.you span{position:absolute;left:34px;top:-2px;transform:rotate(45deg);font-size:12px;letter-spacing:.1em;background:var(--amber);color:var(--ink);padding:5px 9px;border-radius:999px}
+.ring{position:absolute;left:calc(48% + 15px);top:calc(52% + 15px);width:12px;height:12px;margin:-6px;border-radius:50%;border:2px solid var(--amber);opacity:0;animation:ring 7s infinite}
+@keyframes type{0%{width:0}30%,90%{width:18ch}100%{width:0}}
+@keyframes drop{0%,18%{opacity:0;transform:translateY(-20px) rotate(-45deg)}26%,92%{opacity:1;transform:rotate(-45deg)}100%{opacity:0}}
+@keyframes you{0%,36%{opacity:0;transform:translateY(-40px) rotate(-45deg) scale(.6)}44%{opacity:1;transform:rotate(-45deg) scale(1.15)}50%,92%{opacity:1;transform:rotate(-45deg) scale(1)}100%{opacity:0}}
+@keyframes ring{0%,48%{opacity:0;transform:scale(1)}52%{opacity:1}80%,100%{opacity:0;transform:scale(9)}}
+
+@media (max-width:760px){
+  .card{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;top:calc(72px + var(--i)*10px);min-height:calc(100svh - 104px);padding:18px;border-radius:22px;gap:16px}
+  .svc-stage{order:-1;min-height:240px;height:auto}
+  .card-txt{gap:12px;justify-content:flex-end}
+  .card h3{font-size:clamp(46px,13.5vw,64px);margin:0}
+  .card-line{font-size:22px}
+  .card-chips{font-size:10.5px}
+  .card-more{padding:11px 16px;font-size:11px}
+  .st-launch{padding:8%}
+  .count{font-size:clamp(60px,18vw,90px)}
+  .check{gap:8px 14px;font-size:10.5px}
+  .cal{width:40%}
+}
+@media (prefers-reduced-motion:reduce){
+  .svc-stage *{animation:none!important;opacity:1!important}
+  .card{position:relative;top:auto}
+  .cur,.sel,.burst,.ring{display:none}
+  .count span{display:none}.count .live{display:block}
+  .s1 .w{display:none}.s1 .w1{display:block}
+  .q span{width:auto;border:0}
 }
 </style>
 </head>
@@ -500,22 +631,97 @@ footer a:hover{color:var(--paper)}
 </section>
 
 <section class="services" id="services" aria-labelledby="services-title">
-  <div class="wrap svc-grid">
+  <div class="wrap">
     <div class="svc-head">
       <span class="eyebrow mono">Services in Dubai</span>
       <h2 class="h2" id="services-title">What I make for brands in Dubai.</h2>
-      <p class="lede">Five things I'm asked for most, built start to finish and measured after launch. For startups, local businesses and teams across the UAE, at freelancer rates with a fixed quote in AED.</p>
+      <p class="lede">Six jobs I get hired for, built start to finish. Freelancer rates, fixed quote in AED.</p>
     </div>
-    <div>
-    <ol class="svc-list">
-      <li class="svc"><h3>Websites</h3><p>Landing pages and sites that load fast, get found on Google and turn visits into enquiries.</p><span class="mono">Landing pages · CRO · Webflow, WordPress, Shopify · SEO setup</span><a class="svc-more mono" href="dubai/website-design">Website design in Dubai →</a></li>
-      <li class="svc"><h3>Presentations</h3><p>Pitch decks and sales presentations with one clear point per slide, so the room remembers it.</p><span class="mono">Pitch decks · Sales decks · Storyline · Slide design</span><a class="svc-more mono" href="dubai/pitch-deck-design">Pitch deck design in Dubai →</a></li>
-      <li class="svc"><h3>Podcasts</h3><p>From show format and guests to the edit, clips and thumbnails that carry each episode onto social.</p><span class="mono">Format · Editing · Reels and shorts · Thumbnails</span><a class="svc-more mono" href="dubai/podcast-production">Podcast production in Dubai →</a></li>
-      <li class="svc"><h3>Launches</h3><p>Product and brand launches planned end to end: the angle, the assets, the paid push and the tracking.</p><span class="mono">Launch plan · Campaign assets · Paid media · Tracking</span><a class="svc-more mono" href="dubai/product-launch-marketing">Launch marketing in Dubai →</a></li>
-      <li class="svc"><h3>Social <em>media</em></h3><p>Content calendars, creator briefs and platform-native posts that keep a brand showing up every week.</p><span class="mono">Content calendar · UGC · Reels · Community</span><a class="svc-more mono" href="dubai/social-media-marketing">Social media marketing in Dubai →</a></li>
+    <ol class="stack">
+    <li class="card c-web" style="--i:0">
+      <div class="card-txt">
+        <span class="card-no mono">01 / 06</span>
+        <h3>Websites</h3>
+        <p class="card-line">You get three seconds on a phone. I build pages that use them.</p>
+        <p class="card-chips mono">Landing pages · Webflow, WordPress, Shopify · CRO · SEO setup</p>
+        <a class="card-more mono" href="dubai/website-design">Website design in Dubai →</a>
+      </div>
+      <div class="svc-stage st-web" aria-hidden="true">
+      <div class="br"><div class="br-top"><i></i><i></i><i></i><span>yourbrand.ae</span></div>
+      <div class="br-body"><b class="b1"></b><b class="b2"></b><b class="b3"></b><span class="cta">WhatsApp us</span><div class="row3"><b></b><b></b><b></b></div></div></div>
+      <svg class="cur" viewBox="0 0 24 24"><path d="M5 2.5l14 8.2-6.2 1.6-3.1 6.2z"/></svg>
+      <div class="toast"><i></i><span>New enquiry</span><small>just now</small></div>
+      </div>
+    </li>
+    <li class="card c-deck" style="--i:1">
+      <div class="card-txt">
+        <span class="card-no mono">02 / 06</span>
+        <h3>Presentations</h3>
+        <p class="card-line">One point per slide, so the room repeats it on the drive home.</p>
+        <p class="card-chips mono">Pitch decks · Sales decks · Storyline · Slide design</p>
+        <a class="card-more mono" href="dubai/pitch-deck-design">Pitch deck design in Dubai →</a>
+      </div>
+      <div class="svc-stage st-deck" aria-hidden="true">
+      <div class="slide s3"><b></b><i></i></div><div class="slide s2"><b></b><i></i></div>
+      <div class="slide s1"><span class="w w1">One point.</span><span class="w w2">One slide.</span><span class="w w3">Remembered.</span><em class="pg mono">01 / 12</em></div>
+      </div>
+    </li>
+    <li class="card c-pod" style="--i:2">
+      <div class="card-txt">
+        <span class="card-no mono">03 / 06</span>
+        <h3>Podcasts</h3>
+        <p class="card-line">An hour of talking, cut into clips that travel further than the episode.</p>
+        <p class="card-chips mono">Format · Editing · Reels and shorts · Thumbnails</p>
+        <a class="card-more mono" href="dubai/podcast-production">Podcast production in Dubai →</a>
+      </div>
+      <div class="svc-stage st-pod" aria-hidden="true">
+      <span class="rec mono"><i></i>REC</span><div class="wave"><i style="--h:59%;--d:1.14s"></i><i style="--h:68%;--d:0.78s"></i><i style="--h:27%;--d:0.99s"></i><i style="--h:30%;--d:0.44s"></i><i style="--h:25%;--d:1.09s"></i><i style="--h:45%;--d:0.04s"></i><i style="--h:73%;--d:0.50s"></i><i style="--h:48%;--d:0.11s"></i><i style="--h:72%;--d:0.07s"></i><i style="--h:90%;--d:0.15s"></i><i style="--h:46%;--d:0.76s"></i><i style="--h:92%;--d:1.14s"></i><i style="--h:91%;--d:0.70s"></i><i style="--h:24%;--d:1.17s"></i><i style="--h:23%;--d:0.67s"></i><i style="--h:35%;--d:0.35s"></i><i style="--h:36%;--d:0.65s"></i><i style="--h:91%;--d:0.37s"></i><i style="--h:41%;--d:0.12s"></i><i style="--h:91%;--d:0.77s"></i><i style="--h:65%;--d:0.12s"></i><i style="--h:26%;--d:0.68s"></i><i style="--h:97%;--d:0.25s"></i><i style="--h:86%;--d:0.51s"></i><i style="--h:58%;--d:0.56s"></i><i style="--h:76%;--d:0.43s"></i><i style="--h:49%;--d:0.95s"></i><i style="--h:49%;--d:0.10s"></i><i style="--h:56%;--d:0.63s"></i><i style="--h:61%;--d:0.88s"></i><i style="--h:54%;--d:0.73s"></i><i style="--h:27%;--d:0.14s"></i><i style="--h:71%;--d:0.20s"></i><i style="--h:61%;--d:0.18s"></i><i style="--h:80%;--d:0.51s"></i><i style="--h:27%;--d:0.92s"></i><i style="--h:91%;--d:0.95s"></i><i style="--h:58%;--d:0.41s"></i><i style="--h:62%;--d:0.71s"></i><i style="--h:92%;--d:0.96s"></i><i style="--h:26%;--d:1.01s"></i><i style="--h:52%;--d:0.57s"></i><i style="--h:26%;--d:0.07s"></i><i style="--h:57%;--d:0.78s"></i></div><span class="ph"></span><span class="sel"></span>
+      <div class="clips"><span>Clip 01</span><span>Clip 02</span><span>Clip 03</span></div>
+      </div>
+    </li>
+    <li class="card c-launch" style="--i:3">
+      <div class="card-txt">
+        <span class="card-no mono">04 / 06</span>
+        <h3>Launches</h3>
+        <p class="card-line">Launch day is the easy part. I plan everything that comes before it.</p>
+        <p class="card-chips mono">Angle · Landing page · Campaign assets · Paid push · Tracking</p>
+        <a class="card-more mono" href="dubai/product-launch-marketing">Launch marketing in Dubai →</a>
+      </div>
+      <div class="svc-stage st-launch" aria-hidden="true">
+      <div class="count mono"><span>T–3</span><span>T–2</span><span>T–1</span><span class="live">Live</span></div>
+      <ul class="check mono"><li>Angle</li><li>Landing page</li><li>Assets</li><li>Paid push</li><li>Tracking</li></ul><span class="burst"></span>
+      </div>
+    </li>
+    <li class="card c-social" style="--i:4">
+      <div class="card-txt">
+        <span class="card-no mono">05 / 06</span>
+        <h3>Social <em>media</em></h3>
+        <p class="card-line">Showing up every week, not just when someone remembers to post.</p>
+        <p class="card-chips mono">Content calendar · Reels · UGC · Community</p>
+        <a class="card-more mono" href="dubai/social-media-marketing">Social media marketing in Dubai →</a>
+      </div>
+      <div class="svc-stage st-social" aria-hidden="true">
+      <div class="phone"><div class="feed"><div class="tile t0"><b></b><i></i><i></i></div><div class="tile t1"><b></b><i></i><i></i></div><div class="tile t2"><b></b><i></i><i></i></div><div class="tile t3"><b></b><i></i><i></i></div><div class="tile t0"><b></b><i></i><i></i></div><div class="tile t1"><b></b><i></i><i></i></div><div class="tile t2"><b></b><i></i><i></i></div><div class="tile t3"><b></b><i></i><i></i></div><div class="tile t0"><b></b><i></i><i></i></div><div class="tile t1"><b></b><i></i><i></i></div></div><span class="heart h1">♥</span><span class="heart h2">♥</span><span class="heart h3">♥</span></div>
+      <div class="cal"><span class="mono">This month</span><div><i style="--d:0.00s"></i><i style="--d:0.11s"></i><i style="--d:0.22s"></i><i style="--d:0.33s"></i><i style="--d:0.44s"></i><i style="--d:0.55s"></i><i style="--d:0.66s"></i><i style="--d:0.77s"></i><i style="--d:0.88s"></i><i style="--d:0.99s"></i><i style="--d:1.10s"></i><i style="--d:1.21s"></i><i style="--d:1.32s"></i><i style="--d:1.43s"></i><i style="--d:1.54s"></i><i style="--d:1.65s"></i><i style="--d:1.76s"></i><i style="--d:1.87s"></i><i style="--d:1.98s"></i><i style="--d:2.09s"></i><i style="--d:2.20s"></i><i style="--d:2.31s"></i><i style="--d:2.42s"></i><i style="--d:2.53s"></i><i style="--d:2.64s"></i><i style="--d:2.75s"></i><i style="--d:2.86s"></i><i style="--d:2.97s"></i></div></div>
+      </div>
+    </li>
+    <li class="card c-map" style="--i:5">
+      <div class="card-txt">
+        <span class="card-no mono">06 / 06</span>
+        <h3>Local SEO</h3>
+        <p class="card-line">When someone nearby searches for what you do, you're the pin they tap.</p>
+        <p class="card-chips mono">Google Business Profile · Reviews · Local pages</p>
+        <a class="card-more mono" href="dubai/local-seo">Local SEO in Dubai →</a>
+      </div>
+      <div class="svc-stage st-map" aria-hidden="true">
+      <svg class="streets" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><path d="M-10 70 L410 40 M-10 190 L410 230 M80 -10 L120 310 M250 -10 L210 310 M330 -10 L370 310 M-10 130 C120 110 260 160 410 120"/></svg>
+      <div class="q"><span class="mono">marketing near me</span></div>
+      <i class="pin p1"></i><i class="pin p2"></i><i class="pin p3"></i><i class="pin p4"></i>
+      <i class="pin you"><span class="mono">You</span></i><span class="ring"></span>
+      </div>
+    </li>
     </ol>
-      <p class="svc-foot"><a class="link-arrow" href="dubai/local-seo">Local SEO in Dubai</a><a class="link-arrow" href="dubai/">All services and pricing</a></p>
-    </div>
+    <p class="svc-foot"><a class="link-arrow" href="dubai/">All services and pricing</a></p>
   </div>
 </section>
 
@@ -720,11 +926,14 @@ setMode(0);
 const modeIO=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting) setMode(modes.indexOf(e.target)); }); },{rootMargin:'-45% 0px -45% 0px'});
 modes.forEach(m=>modeIO.observe(m));
 
-/* ---------- services: light the one in the middle ---------- */
-const svcs=[...document.querySelectorAll('.svc')];
-const svcIO=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ svcs.forEach(s=>s.classList.toggle('is-on',s===e.target)); } }); },{rootMargin:'-42% 0px -42% 0px'});
-svcs.forEach(s=>svcIO.observe(s));
-if (reduce.matches) svcs.forEach(s=>s.classList.add('is-on')); else svcs[0].classList.add('is-on');
+/* ---------- services: the stack ---------- */
+const cards=[...document.querySelectorAll('.stack .card')];
+const cardIO=new IntersectionObserver(es=>{ es.forEach(e=>e.target.classList.toggle('is-in',e.isIntersecting)); },{threshold:.25});
+cards.forEach(c=>cardIO.observe(c));
+function aimCursor(){ const c=document.querySelector('.c-web'); if(!c) return; const st=c.querySelector('.svc-stage'), b=c.querySelector('.cta'); if(!st||!b) return;
+  const s=st.getBoundingClientRect(), r=b.getBoundingClientRect();
+  st.style.setProperty('--cx',(r.left-s.left+r.width*.55)+'px'); st.style.setProperty('--cy',(r.top-s.top+r.height*.5)+'px'); }
+aimCursor(); addEventListener('resize',aimCursor);
 
 /* ---------- scroll choreography (GSAP) ---------- */
 function startScroll(){
@@ -753,6 +962,10 @@ function startScroll(){
         .to(['#colL','#colR','#heroNote','#cue'],{opacity:0,y:-30,duration:.35,ease:'power1.in'},0)
         .fromTo('#heroSay',{opacity:0,y:40},{opacity:1,y:0,duration:.45,ease:'power2.out'},.45);
     }
+
+    // services: each card sinks back as the next one slides over it
+    document.querySelectorAll('.stack .card').forEach((c,i,all)=>{ const nx=all[i+1]; if(!nx) return;
+      gsap.to(c,{scale:.93,'--shade':.45,ease:'none',scrollTrigger:{trigger:nx,start:'top bottom',end:'top 30%',scrub:true}}); });
 
     // quote: words light up as you read
     const q=document.getElementById('quoteText');
